@@ -147,6 +147,23 @@ Please read the [Jobrunr Pro section](https://docs.axoniq.io/reference-guide/ext
 
 ### Kafka
 
+The [Kafka Extension](https://github.com/AxonFramework/extension-kafka) repository enables integration with [Kafka](https://kafka.apache.org/).
+
+Setting up a Kafka integration with your Axon Framework applications allows you to:
+1. Publish Axon Event Messages onto one or more Kafka topics, and
+2. to read Kafka Consumer Records converted to Axon Event Messages into your `@EventHandler` annotated methods.
+
+In doing so, you would enable (micro)service communication through event streaming.
+Or, you can attach a (third-party) application with your Axon Framework application, communicating through Kafka.
+
+Note that the Axon Framework team **does not** intend to support [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview) through the Kafka Extension.
+Although there are Kafka-focused articles explaining how to achieve this, we find this a suboptimal solution leading to predicaments in the future.
+We thus suggest you choose [Axon Server](https://axoniq.io/product-overview/axon-server), an RDBMS solution or the [MongoDB Extension](#mongodb) to store your events and subsequently support event sourcing.
+
+You should regard this extension as a partial replacement of Axon Server as, compared to Axon Server, it only covers event streaming.
+
+Please read the [Kafka section](https://docs.axoniq.io/reference-guide/extensions/kafka) of the documentation for more information about this extension.
+
 ### Kotlin
 
 ### MongoDB
