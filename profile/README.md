@@ -11,7 +11,7 @@ Although the main repository, [Axon Framework](https://github.com/AxonFramework/
 * **[Extensions](#extensions)** 
     * **[AMQP](#amqp)** - Extension adding [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) support for event streaming
     * **[JGroups](#jgroups)** - Extension adding [JGroups](http://www.jgroups.org/) integration for command routing
-    * **[JobRunr Pro](#jobrunr-pro)** - Extensions adding [JobRunr](https://www.jobrunr.io/en/) Pro integration for deadline management and event scheduling
+    * **[JobRunr Pro](#jobrunr-pro)** - Extensions adding [JobRunr](https://www.jobrunr.io/en/) Pro integration for deadline management
     * **[Kafka](#kafka)** - Extension adding [Kafka](https://kafka.apache.org/) integration for event streaming
     * **[Kotlin](#kotlin)** - Extension enhancing the development experience when using [Kotlin](https://kotlinlang.org/)
     * **[MongoDB](#mongodb)** - Extension adding [MongoDB](https://www.mongodb.com/) integration for all Axon Framework components requiring storage
@@ -131,6 +131,17 @@ You should regard this extension as a partial replacement of [Axon Server](https
 Please read the [JGroups section](https://docs.axoniq.io/reference-guide/extensions/jgroups) of the documentation for more information about this extension.
 
 ### JobRunr Pro
+
+The [JobRunr Pro Extension](https://github.com/AxonFramework/extension-jobrunrpro) repository provides support for the "pro" edition of [JobRunr](https://www.jobrunr.io/en/).
+
+Users can benefit from this extension whenever they have:
+
+1. Acquired [JobRunr Pro](https://www.jobrunr.io/en/pricing/), and
+2. want to use Axon's [deadline management](https://docs.axoniq.io/reference-guide/axon-framework/deadlines/deadline-managers) functionality.
+
+We constructed this extension as some feature on the `DeadlineManager` API cannot be supported with the free edition of JobRunr.
+
+Please read the [Jobrunr Pro section](https://docs.axoniq.io/reference-guide/extensions/jobrunrpro) of the documentation for more information about this extension.
 
 ### Kafka
 
