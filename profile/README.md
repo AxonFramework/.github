@@ -106,6 +106,16 @@ For more details about each extension, we refer to the subsections below.
 
 ### AMQP
 
+The [AMQP Extension](https://github.com/AxonFramework/extension-amqp) repository provides support for the [Advanced Message Queuing Protocol](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) (AMQP).
+
+Users can add this extension to, for example, include a [RabbitMQ](https://www.rabbitmq.com/) integration with their Axon Framework application.
+Setting up this integration allows you to publish Axon events onto and read from a queue.
+In doing so, you would enable (micro)service communication, supporting event streaming.
+
+You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers event routing.
+
+Please read the [AMQP section](https://docs.axoniq.io/reference-guide/extensions/spring-amqp) of the documentation for more information about this extension.
+
 ### JGroups
 
 ### JobRunr Pro
