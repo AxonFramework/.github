@@ -1,8 +1,12 @@
 # Axon
 
+The 'Axon Framework'-project consists of numerous repositories you can use in combination to build a flexible and sustainable application landscape.
+Although the main repository, [Axon Framework](https://github.com/AxonFramework/AxonFramework), is undoubtedly the core, you can extend and optimize it by utilizing the other available tools.
+
 * [Axon Framework](#axon-framework)
 * [Documentation](#documentation)
 * [Samples](#samples)
+* [Inspector Axon](#inspector-axon)
 * [Extensions](#extensions)
   * [AMQP](#amqp)
   * [JGroups](#jgroups)
@@ -17,6 +21,10 @@
   * [Tracing](#tracing)
 * [Bill of Materials](#bill-of-materials)
 * [Intellij Plugin](#intellij-plugin)
+
+For more information on anything Axon, please visit our websites, [https://developer.axoniq.io/](https://developer.axoniq.io/) and [https://axoniq.io](https://axoniq.io).
+The former provides dedicated developer information, like explaining concepts, the available tooling, and blogs.
+The latter contains information about AxonIQ, the company maintaining the 'Axon Framework'-project, providing information like the products, use cases, subscriptions, and training.
 
 ## Axon Framework
 
@@ -42,6 +50,8 @@ Hence, your focus can shift from non-functional requirements to your business fu
 ## Documentation
 
 ## Samples
+
+## Inspector Axon
 
 ## Extensions
 
