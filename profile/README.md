@@ -1,30 +1,108 @@
 # Axon
 
-* [Axon Framework](#axon-framework)
-* [Documentation](#documentation)
-* [Samples](#samples)
-* [Extensions](#extensions)
-  * [AMQP](#amqp)
-  * [JGroups](#jgroups)
-  * [JobRunr Pro](#jobrunr-pro)
-  * [Kafka](#kafka)
-  * [Kotlin](#kotlin)
-  * [Mongo](#mongo)
-  * [Multitenancy](#multitenancy)
-  * [Reactor](#reactor)
-  * [Spring Cloud](#spring-cloud)
-  * [Spring Native](#spring-native)
-  * [Tracing](#tracing)
-* [Bill of Materials](#bill-of-materials)
-* [Intellij Plugin](#intellij-plugin)
+The 'Axon Framework'-project consists of numerous repositories you can use in combination to build a flexible and sustainable application landscape.
+Although the main repository, [Axon Framework](https://github.com/AxonFramework/AxonFramework), is undoubtedly the core, you can extend and optimize it by utilizing the other available tools.
+
+#### Contents
+
+* **[Axon Framework](#axon-framework)** 
+* **[Getting Started](#getting-started)** 
+* **[Receiving Help](#receiving-help)**
+* **[Extensions](#extensions)** 
+    * **[AMQP](#amqp)** - Extension adding [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) support for event streaming
+    * **[JGroups](#jgroups)** - Extension adding [JGroups](http://www.jgroups.org/) integration for command routing
+    * **[JobRunr Pro](#jobrunr-pro)** - Extensions adding [JobRunr](https://www.jobrunr.io/en/) Pro integration for deadline management and event scheduling
+    * **[Kafka](#kafka)** - Extension adding [Kafka](https://kafka.apache.org/) integration for event streaming
+    * **[Kotlin](#kotlin)** - Extension enhancing the development experience when using [Kotlin](https://kotlinlang.org/)
+    * **[MongoDB](#mongodb)** - Extension adding [MongoDB](https://www.mongodb.com/) integration for all Axon Framework components requiring storage
+    * **[Multitenancy](#multitenancy)** - Extension adding building blocks to simplify [multitenancy](https://en.wikipedia.org/wiki/Multitenancy), particularly straightforward in combination with [Axon Server](https://developer.axoniq.io/axon-server/overview)
+    * **[Reactor](#reactor)** - Extension providing Axon Framework-specific infrastructure components using the [Project Reactor](https://projectreactor.io/) API 
+    * **[Spring Cloud](#spring-cloud)** - Extension adding [Spring Cloud](https://spring.io/projects/spring-cloud) integration for command routing
+    * **[Spring Native](#spring-native)** - Experimental extension providing native compilation for Axon and Spring-based application through the [Spring Native](https://github.com/spring-attic/spring-native) project.  
+    * **[Tracing](#tracing)** - Extension adding [Open Tracing](https://opentracing.io/) integration to Axon's infrastructure components
+* **[Bill of Materials](#bill-of-materials)** 
+* **[Inspector Axon](#inspector-axon)** - Specialized monitoring and management tooling for Axon Framework applications.
+* **[IntelliJ IDEA Plugin](#intellij-idea-plugin)** - Plugin for IntelliJ IDEA simplifying Axon Framework development  
+* **[AxonIQ Initializr](#axoniq-initializr)** - Webpage providing Axon Framework project scaffolding
+
+For more information on anything Axon, please visit our websites, [https://developer.axoniq.io/](https://developer.axoniq.io/) and [https://axoniq.io](https://axoniq.io).
+The former provides dedicated developer information, like explaining concepts, the available tooling, and blogs.
+The latter contains information about AxonIQ, the company maintaining the 'Axon Framework'-project, providing information like the products, use cases, subscriptions, and training.
 
 ## Axon Framework
 
-## Documentation
+[Axon Framework](https://github.com/AxonFramework/AxonFramework) is a framework for building evolutionary, message-driven [microservice](https://developer.axoniq.io/microservices/overview) systems based on the principles of [Domain-Driven Design](https://developer.axoniq.io/domain-driven-design/overview) (DDD), [Command-Query Responsibility Separation](https://developer.axoniq.io/cqrs/overview) (CQRS), and [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview).
 
-## Samples
+Axon Framework provides you with the necessary building blocks to follow these principles.
+The messaging support for commands, events, and queries is at the core of these building blocks.
+The messaging basics enable an evolutionary approach towards microservices through the [location transparency](https://en.wikipedia.org/wiki/Location_transparency) they provide.
+
+The building blocks include aggregate design handles, aggregate repositories, command buses, saga design handles, event stores, query buses, and more.
+The framework provides sensible defaults for all of these components out of the box.
+
+Axon Framework assists in distributing applications to support scalability or fault tolerance.
+The most accessible and quick road forward would be to use [Axon Server](https://developer.axoniq.io/axon-server/overview) to seamlessly adjust message buses to distributed implementations.
+It does so by being a dedicated message router and an efficient event store implementation for scalable event sourcing.
+
+Next to Axon Server, several of [Axon's extensions](#extensions) can help in this space too.
+However, they will require a little more handy work from the developer to set up, as knowledge of the tools supported by the extensions is required.
+
+In conclusion, all this combined helps to create a well-structured application without worrying about the infrastructure.
+Hence, your focus can shift from non-functional requirements to your business functionality.
+
+## Getting started
+
+Numerous resources can help you on your journey in using Axon Framework.
+A good starting point is [AxonIQ Developer Portal](https://developer.axoniq.io/), which provides links to resources like blogs, videos, and descriptions.
+
+There are, however, a lot more resources you can benefit from.
+
+For example, training:
+* We have our very own [Academy](https://academy.axoniq.io/)!
+  The introductory courses are free, followed by more in-depth (paid) courses.
+* Next to the Academy, there are dedicated training sessions provided by AxonIQ.
+  Check out the [Training courses](https://www.axoniq.io/training) page for more information about these.
+
+Or, the documentation and forum:
+* The [documentation](https://docs.axoniq.io) explains all of the components maintained within Axon Framework's products.
+* If the guide doesn't help, our [forum](https://discuss.axoniq.io/) provides a place to ask your questions during development.
+* Posting questions on StackOverflow next to Axon's forum is also possible. When doing so, add the `axon` tag! This tag will nudge AxonIQ developers, which will cover those on a best-effort basis.
+
+And several sample projects you can check out:
+* The [quickstart page](https://docs.axoniq.io/reference-guide/getting-started/quick-start) of the documentation provides a simplified entry point into the framework with the [quickstart project](https://download.axoniq.io/quickstart/AxonQuickStart.zip).
+* The [Giftcard Demo](https://github.com/AxonIQ/giftcard) contains a simple gift card management
+* The [Hotel Demo](https://github.com/AxonIQ/hotel-demo) shows a fleshed-out example of using Axon Framework.
+* The [Code Samples](https://github.com/AxonIQ/code-samples) repository contains in-depth samples for special use cases.
+  It, for example, contains subjects like [distributed exception handling](https://github.com/AxonIQ/code-samples/tree/master/distributed-exceptions), [sagas](https://github.com/AxonIQ/code-samples/tree/master/saga), [upcasters](https://github.com/AxonIQ/code-samples/tree/master/upcaster), [multitenancy](https://github.com/AxonIQ/code-samples/tree/master/multitenant-application), [set-based validation](https://github.com/AxonIQ/code-samples/tree/master/set-based-validation-actor-model), and many more.
+
+When ready to start, you can quickly and easily begin your Axon Framework-based application with the [AxonIQ Initializr](#axoniq-initializr) at [https://start.axoniq.io/](https://start.axoniq.io/).
+Note that this solution is only feasible if you want to stick to the Spring ecosphere!
+
+## Receiving help
+
+Do you need help with using any of our libraries or products?
+Know that we want to help you out the best we can!
+There are a couple of things to consider when you're traversing anything Axon:
+
+* Checking the [documentation page](https://docs.axoniq.io) should be your first stop when anything is unclear.
+* When the documentation does not cover your predicament, we would greatly appreciate it if you could file an [issue](https://github.com/AxonIQ/reference-guide/issues) for it.
+  Drafting issues helps us to improve the documentation for all users based on your valuable input.
+* Our [forum](https://discuss.axoniq.io/) provides a space to communicate with the Axon community to help you out.
+  AxonIQ developers will help you out on a best-effort basis.
+  And if you know how to help someone else, we greatly appreciate your contributions!
+* We also monitor Stack Overflow for any question tagged with [**axon**](https://stackoverflow.com/questions/tagged/axon).
+  Similarly to the forum, AxonIQ developers help out on a best-effort basis.
+* We built [Inspector Axon](#inspector-axon) purposefully to help you inspect your Axon Framework application in detail.
+  Attaching it to your project is straightforward, providing you with a dashboard with specialized metrics and message flow diagrams, to name a few.
+* If you are developing in [IntelliJ IDEA](https://www.jetbrains.com/idea/), know that we have constructed a [plugin](#intellij-idea-plugin) to streamline the development of Axon-based applications.
 
 ## Extensions
+
+Where [Axon Framework](#axon-framework) contains the core functionality for event-driven application construction, the extensions add valuable integrations with other tools and languages to enhance Axon's capabilities.
+The extensions are intentionally split off from the main framework to not over encumber the user with unused functionality and obstruct the release cycles of the separate repositories.
+
+The functionality of the extensions ranges from event streaming integrations with [AMQP](#amqp) and [Kafka](#kafka), database tooling like [Mongo](#mongodb), and language-specific integrations as with the [Kotlin](#kotlin) extension.
+For more details about each extension, we refer to the subsections below.
 
 ### AMQP
 
@@ -36,7 +114,7 @@
 
 ### Kotlin
 
-### Mongo
+### MongoDB
 
 ### Multitenancy
 
@@ -50,4 +128,8 @@
 
 ## Bill of Materials
 
-## Intellij Plugin
+## Inspector Axon
+
+## IntelliJ IDEA Plugin
+
+## AxonIQ Initializr
