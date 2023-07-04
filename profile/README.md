@@ -110,9 +110,11 @@ The [AMQP Extension](https://github.com/AxonFramework/extension-amqp) repository
 
 Users can add this extension to, for example, include a [RabbitMQ](https://www.rabbitmq.com/) integration with their Axon Framework application.
 Setting up this integration allows you to publish Axon events onto and read from a queue.
-In doing so, you would enable (micro)service communication, supporting event streaming.
 
-You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers event routing.
+In doing so, you would enable (micro)service communication through event streaming.
+Or, you can attach a (third-party) application with your Axon Framework application, communicating through AMQP.
+
+You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers event streaming.
 
 Please read the [AMQP section](https://docs.axoniq.io/reference-guide/extensions/spring-amqp) of the documentation for more information about this extension.
 
