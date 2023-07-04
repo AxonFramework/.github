@@ -20,6 +20,25 @@
 
 ## Axon Framework
 
+[Axon Framework](https://github.com/AxonFramework/AxonFramework) is a framework for building evolutionary, message-driven [microservice](https://developer.axoniq.io/microservices/overview) systems based on the principles of [Domain-Driven Design](https://developer.axoniq.io/domain-driven-design/overview) (DDD), [Command-Query Responsibility Separation](https://developer.axoniq.io/cqrs/overview) (CQRS), and [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview).
+
+Axon Framework provides you with the necessary building blocks to follow these principles.
+The messaging support for commands, events, and queries is at the core of these building blocks.
+The messaging basics enable an evolutionary approach towards microservices through the [location transparency](https://en.wikipedia.org/wiki/Location_transparency) they provide.
+
+The building blocks include aggregate design handles, aggregate repositories, command buses, saga design handles, event stores, query buses, and more.
+The framework provides sensible defaults for all of these components out of the box.
+
+Axon Framework assists in distributing applications to support scalability or fault tolerance.
+The most accessible and quick road forward would be to use [Axon Server](https://developer.axoniq.io/axon-server/overview) to seamlessly adjust message buses to distributed implementations.
+It does so by being a dedicated message router and an efficient event store implementation for scalable event sourcing.
+
+Next to Axon Server, several of [Axon's extensions](#extensions) can help in this space too.
+However, they will require a little more handy work from the developer to set up, as knowledge of the tools supported by the extensions is required.
+
+In conclusion, all this combined helps to create a well-structured application without worrying about the infrastructure.
+Hence, your focus can shift from non-functional requirements to your business functionality.
+
 ## Documentation
 
 ## Samples
