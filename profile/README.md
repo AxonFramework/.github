@@ -118,6 +118,18 @@ Please read the [AMQP section](https://docs.axoniq.io/reference-guide/extensions
 
 ### JGroups
 
+The [JGroups Extension](https://github.com/AxonFramework/extension-jgroups) repository enables integration with [JGroups](http://www.jgroups.org/).
+
+You can use this extension to enable command routing in a distributed environment.
+As command routing differs from, for example, load balancing REST operation, it is highly recommended to use a distributed command routing solution whenever you have several applications and/or application instances that need to communicate with one another.
+
+The extension achieves this by implementing the `CommandRouter` and `CommandBusConnector`, consolidated in the `JGroupsConnector`.
+This connector provides the service discovery and message routing required to pass `CommandMessages` from one application (instance) to another.
+
+You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers command routing.
+
+Please read the [JGroups section](https://docs.axoniq.io/reference-guide/extensions/jgroups) of the documentation for more information about this extension.
+
 ### JobRunr Pro
 
 ### Kafka
