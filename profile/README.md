@@ -178,6 +178,27 @@ Please read the [Kotlin section](https://docs.axoniq.io/reference-guide/extensio
 
 ### MongoDB
 
+The [MongoDB Extension](https://github.com/AxonFramework/extension-mongo) repository enables [MongoDB](https://www.mongodb.com/) as a storage solution throughout the framework.
+
+Users can set this extension whenever they want to use MongoDB to store:
+- [Events](https://docs.axoniq.io/reference-guide/axon-framework/events/event-bus-and-event-store#event-store)
+- [Sagas](https://docs.axoniq.io/reference-guide/axon-framework/sagas)
+- [Tracking Tokens](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors/streaming#tracking-tokens)
+- [Dead Letters](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors#dead-letter-queue)
+
+Especially when you store Query Models or inside a MongoDB collection, we recommend you keep the tracking tokens of the [streaming processor](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors/streaming) inside MongoDB as well.
+By doing so, you ascertain that the framework uses a single transaction to update the model and token.
+
+The same logic applies to Sagas that are backed by streaming processors and stored in MongoDB; storing the tokens next to the saga instances makes the application more robust.
+
+Note that although you can use this extension to adjust MongoDB into an Event Store, we do not necessarily recommend this.
+During the lifecycle of this extension, we have noticed predicaments with how MongoDB behaves, causing the Event Store to act suboptimal from a performance perspective.
+We thus recommend either Axon Server (the highest level of performance for event storage) or an RDBMS of choice instead.
+
+You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers event storage.
+
+Please read the [MongoDB section](https://docs.axoniq.io/reference-guide/extensions/mongo) of the documentation for more information about this extension.
+
 ### Multitenancy
 
 ### Reactor
