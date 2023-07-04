@@ -55,6 +55,12 @@ Hence, your focus can shift from non-functional requirements to your business fu
 
 ## Extensions
 
+Where [Axon Framework](#axon-framework) contains the core functionality for event-driven application construction, the extensions add valuable integrations with other tools and languages to enhance Axon's capabilities.
+The extensions are intentionally split off from the main framework to not over encumber the user with unused functionality and obstruct the release cycles of the separate repositories.
+
+The functionality of the extensions ranges from event streaming integrations with [AMQP](#amqp) and [Kafka](#kafka), database tooling like [Mongo](#mongo), and language-specific integrations as with the [Kotlin](#kotlin) extension.
+For more details about each extension, we refer to the subsections below.
+
 ### AMQP
 
 ### JGroups
