@@ -50,11 +50,51 @@ However, they will require a little more handy work from the developer to set up
 In conclusion, all this combined helps to create a well-structured application without worrying about the infrastructure.
 Hence, your focus can shift from non-functional requirements to your business functionality.
 
-## Documentation
+## Getting started
 
-## Samples
+Numerous resources can help you on your journey in using Axon Framework.
+A good starting point is [AxonIQ Developer Portal](https://developer.axoniq.io/), which provides links to resources like blogs, videos, and descriptions.
 
-## Inspector Axon
+There are, however, a lot more resources you can benefit from.
+
+For example, training:
+* We have our very own [Academy](https://academy.axoniq.io/)!
+  The introductory courses are free, followed by more in-depth (paid) courses.
+* Next to the Academy, there are dedicated training sessions provided by AxonIQ.
+  Check out the [Training courses](https://www.axoniq.io/training) page for more information about these.
+
+Or, the documentation and forum:
+* The [documentation](https://docs.axoniq.io) explains all of the components maintained within Axon Framework's products.
+* If the guide doesn't help, our [forum](https://discuss.axoniq.io/) provides a place to ask your questions during development.
+* Posting questions on StackOverflow next to Axon's forum is also possible. When doing so, add the `axon` tag! This tag will nudge AxonIQ developers, which will cover those on a best-effort basis.
+
+And several sample projects you can check out:
+* The [quickstart page](https://docs.axoniq.io/reference-guide/getting-started/quick-start) of the documentation provides a simplified entry point into the framework with the [quickstart project](https://download.axoniq.io/quickstart/AxonQuickStart.zip).
+* The [Giftcard Demo](https://github.com/AxonIQ/giftcard) contains a simple gift card management
+* The [Hotel Demo](https://github.com/AxonIQ/hotel-demo) shows a fleshed-out example of using Axon Framework.
+* The [Code Samples](https://github.com/AxonIQ/code-samples) repository contains in-depth samples for special use cases.
+  It, for example, contains subjects like [distributed exception handling](https://github.com/AxonIQ/code-samples/tree/master/distributed-exceptions), [sagas](https://github.com/AxonIQ/code-samples/tree/master/saga), [upcasters](https://github.com/AxonIQ/code-samples/tree/master/upcaster), [multitenancy](https://github.com/AxonIQ/code-samples/tree/master/multitenant-application), [set-based validation](https://github.com/AxonIQ/code-samples/tree/master/set-based-validation-actor-model), and many more.
+
+When ready to start, you can quickly and easily begin your Axon Framework-based application with the [AxonIQ Initializr](#axoniq-initializr) at [https://start.axoniq.io/](https://start.axoniq.io/).
+Note that this solution is only feasible if you want to stick to the Spring ecosphere!
+
+## Receiving help
+
+Do you need help with using any of our libraries or products?
+Know that we want to help you out the best we can!
+There are a couple of things to consider when you're traversing anything Axon:
+
+* Checking the [documentation page](https://docs.axoniq.io) should be your first stop when anything is unclear.
+* When the documentation does not cover your predicament, we would greatly appreciate it if you could file an [issue](https://github.com/AxonIQ/reference-guide/issues) for it.
+  Drafting issues helps us to improve the documentation for all users based on your valuable input.
+* Our [forum](https://discuss.axoniq.io/) provides a space to communicate with the Axon community to help you out.
+  AxonIQ developers will help you out on a best-effort basis.
+  And if you know how to help someone else, we greatly appreciate your contributions!
+* We also monitor Stack Overflow for any question tagged with [**axon**](https://stackoverflow.com/questions/tagged/axon).
+  Similarly to the forum, AxonIQ developers help out on a best-effort basis.
+* We built [Inspector Axon](#inspector-axon) purposefully to help you inspect your Axon Framework application in detail.
+  Attaching it to your project is straightforward, providing you with a dashboard with specialized metrics and message flow diagrams, to name a few.
+* If you are developing in [IntelliJ IDEA](https://www.jetbrains.com/idea/), know that we have constructed a [plugin](#intellij-idea-plugin) to streamline the development of Axon-based applications.
 
 ## Extensions
 
