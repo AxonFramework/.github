@@ -171,7 +171,7 @@ Please read the [Kafka section](https://docs.axoniq.io/reference-guide/extension
 
 The [Kotlin Extension](https://github.com/AxonFramework/extension-kotlin) repository eases Axon Framework development for [Kotlin](https://kotlinlang.org/)-based applications.
 
-You can use this extension to relieve some of the "awkwardness" of the Axon Framework API when used in combination with Kotlin.
+You can use this extension to relieve some of the "awkwardness" of the Axon Framework API when using Kotlin to build your application(s).
 It does so by providing reified methods of several of Axon's infrastructure components, like the [command](https://docs.axoniq.io/reference-guide/axon-framework/axon-framework-commands/command-dispatchers#the-command-gateway) and [query gateway]( https://docs.axoniq.io/reference-guide/axon-framework/queries/query-dispatchers#the-query-bus-and-query-gateway), [upcasters](https://docs.axoniq.io/reference-guide/axon-framework/events/event-versioning#event-upcasting), and the [test fixtures](https://docs.axoniq.io/reference-guide/axon-framework/testing).
 
 Please read the [Kotlin section](https://docs.axoniq.io/reference-guide/extensions/kotlin) of the documentation for more information about this extension.
