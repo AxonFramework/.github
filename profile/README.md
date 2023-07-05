@@ -279,6 +279,19 @@ Hence, a 4.7.0 release of Axon Framework leads to a 4.7.0 release of the BOM.
 
 ## Inspector Axon
 
+The Axon Framework team designed [Inspector Axon](https://inspector.axoniq.io/) to further enable [Axon Framework](#axon-framework) applications with valuable data and tooling.
+
+Inspector Axon provides you with numerous benefits:
+- [Event Processor](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors) management tooling, like start, stop, [split, and merge](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors/streaming#splitting-and-merging-segments)
+- Automated monitoring of *all* your message handlers
+- Insights into the flow of your messages with valuable diagrams
+- The information required to deep-dive into the performance of your Axon Framework application
+
+By doing all this, we aim to teach the inner workings of Axon Framework to any user, enabling you the get the most out of the framework.
+
+The [how it works](https://inspector.axoniq.io/how-it-works) page helps you understand how Inspector Axon provides all this information.
+We refer you to [this](https://inspector.axoniq.io/legal) page if you (and your team) are curious to understand how we secure all this behavior.
+
 ## IntelliJ IDEA Plugin
 
 The [Axon Framework IntelliJ Plugin](https://github.com/AxonFramework/IdeaPlugin) is a plugin you can add when using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
