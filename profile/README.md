@@ -232,6 +232,9 @@ As command routing differs from, for example, load balancing REST operation, it 
 The extension achieves this by implementing the `CommandRouter` and `CommandBusConnector`, consolidated in the `SpringCloudeCommandRouter` and `SpringHttpCommandBusConnector`, respectively.
 This connector provides the service discovery and message routing required to pass `CommandMessages` from one application (instance) to another.
 
+Since the implementation uses the Spring Cloud discovery interfaces to perform the service discovery, you are able to choose a multitude of implementations to enable distributed command routing.
+You can, for example, use implementation like [Netflix](https://spring.io/projects/spring-cloud-netflix), [Consul](https://spring.io/projects/spring-cloud-consul), [Zookeeper](https://spring.io/projects/spring-cloud-zookeeper), [Kubernetes](https://spring.io/projects/spring-cloud-kubernetes), and many more.
+
 You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers command routing.
 
 Please read the [Spring Cloud section](https://docs.axoniq.io/reference-guide/extensions/spring-cloud) of the documentation for more information about this extension.
