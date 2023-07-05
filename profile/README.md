@@ -201,6 +201,18 @@ Please read the [MongoDB section](https://docs.axoniq.io/reference-guide/extensi
 
 ### Multitenancy
 
+The [Multitenancy Extension](https://github.com/AxonFramework/extension-multitenancy) repository provides integrated support for [multitenancy](https://en.wikipedia.org/wiki/Multitenancy) to your Axon Framework application.
+
+By adding this extension to your [Axon Framework](#axon-framework) application(s), you receive multi-tenant versions of all the infrastructure components the framework provides.
+In doing so, you can run a single instance of an application but serve many of your tenants in one go.
+Interfaces like the `CommandBus`, `EventProcessor`, and `SequencedDeadLetterQueue` are implemented by this extension to delegate tenant-specific tasks to concrete implementations of these components.
+
+If you combine Axon Framework and the Multitenancy Extension with [Axon Server](https://axoniq.io/product-overview/axon-server), the multitenancy experience of your app(s) is seamless.
+The extension achieves this by utilizing Axon Server's [multi-context](https://docs.axoniq.io/reference-guide/axon-server/administration/multi-context) behavior to dynamically create new tenants (read: a context per tenant) whenever you register them.
+It is usable without Axon Server, but you will be inclined to implement factories for the infrastructure components yourself.
+
+Please read the [Multitenancy](https://github.com/AxonFramework/extension-multitenancy/blob/main/README.md) `README.md` for more information about this extension.
+
 ### Reactor
 
 ### Spring Cloud
