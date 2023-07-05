@@ -238,6 +238,16 @@ Please read the [Spring Cloud section](https://docs.axoniq.io/reference-guide/ex
 
 ### Spring Native
 
+The [Spring Native Extension](https://github.com/AxonFramework/extension-spring-native) repository enables integration with the [Spring Native](https://github.com/spring-attic/spring-native) project.
+
+This extension allows you to compile to a native image whenever you combine Axon Framework with Spring.
+
+Note that the current Spring Native Extension is an experimental release.
+The extension is experimental since the project we based it on is an experimental release too.
+
+As an experimental release, you may expect rigorous changes in the API whenever a new release is published.
+Please keep that in mind when using this extension.
+
 ### Tracing
 
 ## Bill of Materials
