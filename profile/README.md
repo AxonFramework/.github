@@ -99,7 +99,7 @@ Secondly, as Event Sourcing requires us to store events forever, the `EventStore
 
 [Axon Server](https://developer.axoniq.io/axon-server/overview) greatly simplifies these requirements by implementing these four infrastructure components.
 It is a dedicated message routing solution knowledgeable about the need to consistently route commands, stream events as fast as possible, and support the differing querying needs of each service.
-Next to message routing, Axon Server contains a storage engine designed for the specific purpose of storing events for event sourcing.
+But most of all, Axon Server is an event store, a database specifically designed for storing events for event sourcing purpose.
 It offers superior scalability and throughput characteristics without requiring complex tuning of, for example, an RDBMS.
 
 By using Axon Server in combination with Axon Framework, you will thus resolve the need to set up a distributed version of each bus and drop the requirement to optimize your Event Store by hand.
