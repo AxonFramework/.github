@@ -1,7 +1,9 @@
 # Axon
 
-The 'Axon Framework'-project consists of numerous repositories you can use in combination to build a flexible and sustainable application landscape.
-Although the main repository, [Axon Framework](https://github.com/AxonFramework/AxonFramework), is undoubtedly the core, you can extend and optimize it by utilizing the other available tools.
+[Axon Framework](#axon-framework) is a framework for building evolutionary, message-driven [microservice](https://developer.axoniq.io/microservices/overview) systems based on the principles of [Domain-Driven Design](https://developer.axoniq.io/domain-driven-design/overview) (DDD), [Command-Query Responsibility Separation](https://developer.axoniq.io/cqrs/overview) (CQRS), and [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview).
+
+The whole 'Axon Framework'-project consists of numerous repositories you can use in combination with one another to build a flexible and sustainable application landscape.
+Although the main repository, [Axon Framework](https://github.com/AxonFramework/AxonFramework), is undoubtedly the core, you can optimize and enhance it by utilizing the other available tools.
 
 #### Contents
 
@@ -20,9 +22,7 @@ The latter contains information about AxonIQ, the company maintaining the 'Axon 
 
 ## Axon Framework
 
-[Axon Framework](https://github.com/AxonFramework/AxonFramework) is a framework for building evolutionary, message-driven [microservice](https://developer.axoniq.io/microservices/overview) systems based on the principles of [Domain-Driven Design](https://developer.axoniq.io/domain-driven-design/overview) (DDD), [Command-Query Responsibility Separation](https://developer.axoniq.io/cqrs/overview) (CQRS), and [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview).
-
-Axon Framework provides you with the necessary building blocks to follow these principles.
+[Axon Framework](https://github.com/AxonFramework/AxonFramework) provides you with the necessary building blocks to follow these principles.
 The messaging support for commands, events, and queries is at the core of these building blocks.
 The messaging basics enable an evolutionary approach towards microservices through the [location transparency](https://en.wikipedia.org/wiki/Location_transparency) they provide.
 
