@@ -281,4 +281,14 @@ Hence, a 4.7.0 release of Axon Framework leads to a 4.7.0 release of the BOM.
 
 ## IntelliJ IDEA Plugin
 
+The [Axon Framework IntelliJ Plugin](https://github.com/AxonFramework/IdeaPlugin) is a plugin you can add when using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+Including this plugin eases your developer experience of [Axon Framework](#axon-framework) 4.x-based applications.
+
+Some of the features this plugin adds to IntelliJ are:
+* Line markers to visualize messages
+* Axon Framework-specific code structure inspections
+* Easy access to the documentation
+
+Please read the [README](https://github.com/AxonFramework/IdeaPlugin#readme) of the IdeaPlugin project to learn more about this plugin.
+
 ## AxonIQ Initializr
