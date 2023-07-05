@@ -270,6 +270,13 @@ Please read the [Tracing section](https://docs.axoniq.io/reference-guide/extensi
 
 ## Bill of Materials
 
+The [Bill of Materials](https://github.com/AxonFramework/axon-bom) repository of Axon Framework is a dedicated dependency providing compatible versions of the [framework](#axon-framework) and [extensions](#extensions).
+Hence, by adding `axon-bom` to your dependency management system, you ensure the compatibility of Axon's dependencies.
+As such, we recommend you use this dependency whenever you combine Axon Framework with any of the extensions.
+
+The BOM is intended to release with every [Axon Framework](https://github.com/AxonFramework/AxonFramework) release.
+Hence, a 4.7.0 release of Axon Framework leads to a 4.7.0 release of the BOM.
+
 ## Inspector Axon
 
 ## IntelliJ IDEA Plugin
