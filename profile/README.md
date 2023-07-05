@@ -10,7 +10,7 @@ Although the main repository, [Axon Framework](https://github.com/AxonFramework/
 * **[Axon Framework](#axon-framework)** 
 * **[Getting Started](#getting-started)** 
 * **[Receiving Help](#receiving-help)**
-* **[Axon Server](#axon-server)** - Purpose built Message router for commands, event, and queries, and an efficient Event Store 
+* **[Axon Server](#axon-server)** - Purpose built Message router for commands, event, and queries, and an efficient event store 
 * **[Extensions](#extensions)**
 * **[Bill of Materials](#bill-of-materials)** 
 * **[Inspector Axon](#inspector-axon)** - Specialized monitoring and management tooling for Axon Framework applications.
@@ -95,14 +95,14 @@ Furthermore, by Event Sourcing, you are future-proof to any shift and change of 
 
 Both benefits come with their own set of requirements.
 Firstly, we are inclined to use a distributed version of the `CommandBus`, `EventBus`, and `QueryBus` to break apart an application, considering their distinct routing requirements.
-Secondly, as Event Sourcing requires us to store events forever, the `EventStore` will grow indefinitely.
+Secondly, as Event Sourcing requires us to store events forever, the event store will grow indefinitely.
 
 [Axon Server](https://developer.axoniq.io/axon-server/overview) greatly simplifies these requirements by implementing these four infrastructure components.
 It is a dedicated message routing solution knowledgeable about the need to consistently route commands, stream events as fast as possible, and support the differing querying needs of each service.
 But most of all, Axon Server is an event store, a database specifically designed for storing events for event sourcing purpose.
 It offers superior scalability and throughput characteristics without requiring complex tuning of, for example, an RDBMS.
 
-By using Axon Server in combination with Axon Framework, you will thus resolve the need to set up a distributed version of each bus and drop the requirement to optimize your Event Store by hand.
+By using Axon Server in combination with Axon Framework, you will thus resolve the need to set up a distributed version of each bus and drop the requirement to optimize your event store by hand.
 
 Be sure to visit the dedicated [Axon Server page](https://developer.axoniq.io/axon-server/overview) to learn more about all its capabilities and usages.
 If desired, you can download it [here](https://lp.axoniq.io/axon-server-download) for free to give it a try.
@@ -215,8 +215,8 @@ By doing so, you ascertain that the framework uses a single transaction to updat
 
 The same logic applies to Sagas that are backed by streaming processors and stored in MongoDB; storing the tokens next to the saga instances makes the application more robust.
 
-Note that although you can use this extension to adjust MongoDB into an Event Store, we do not necessarily recommend this.
-During the lifecycle of this extension, we have noticed predicaments with how MongoDB behaves, causing the Event Store to act suboptimal from a performance perspective.
+Note that although you can use this extension to adjust MongoDB into an event store, we do not necessarily recommend this.
+During the lifecycle of this extension, we have noticed predicaments with how MongoDB behaves, causing the event store to act suboptimal from a performance perspective.
 We thus recommend either [Axon Server](#axon-server) (the highest level of performance for event storage) or an RDBMS of choice instead.
 
 You should regard this extension as a partial replacement of Axon Server as, compared to Axon Server, it only covers event storage.
