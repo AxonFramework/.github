@@ -275,9 +275,6 @@ The [Bill of Materials](https://github.com/AxonFramework/axon-bom) repository of
 Hence, by adding `axon-bom` to your dependency management system, you ensure the compatibility of Axon's dependencies.
 As such, we recommend you use this dependency whenever you combine Axon Framework with any of the extensions.
 
-The BOM is intended to release with every [Axon Framework](https://github.com/AxonFramework/AxonFramework) release.
-Hence, a 4.7.0 release of Axon Framework leads to a 4.7.0 release of the BOM.
-
 ## Inspector Axon
 
 The Axon Framework team designed [Inspector Axon](https://inspector.axoniq.io/) to further enable [Axon Framework](#axon-framework) applications with valuable data and tooling.
@@ -295,7 +292,7 @@ We refer you to [this](https://inspector.axoniq.io/legal) page if you (and your 
 
 ## IntelliJ IDEA Plugin
 
-The [Axon Framework IntelliJ Plugin](https://github.com/AxonFramework/IdeaPlugin) is a plugin you can add when using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+The [Axon Framework IntelliJ Plugin](https://plugins.jetbrains.com/plugin/18628-axon-framework) is a plugin you can add when using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 Including this plugin eases your developer experience of [Axon Framework](#axon-framework) 4.x-based applications.
 
 Some of the features this plugin adds to IntelliJ are:
