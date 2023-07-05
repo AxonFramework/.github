@@ -105,14 +105,15 @@ For more details about each extension, we refer to the subsections below.
  * **[Reactor](#reactor)** - Extension providing Axon Framework-specific infrastructure components using the [Project Reactor](https://projectreactor.io/) API 
  * **[Spring Cloud](#spring-cloud)** - Extension adding [Spring Cloud](https://spring.io/projects/spring-cloud) integration for command routing
  * **[Spring Native](#spring-native)** - Experimental extension providing native compilation for Axon and Spring-based application through the [Spring Native](https://github.com/spring-attic/spring-native) project.  
- * **[Tracing](#tracing)** - Extension adding [Open Tracing](https://opentracing.io/) integration to Axon's infrastructure components
+ * **[Tracing](#tracing)** - Extension adding [Open Tracing](https://opentracing.io/) integration to Axon's infrastructure components, superseded by integrated [Open Telemetry](https://opentelemetry.io/) support
 
 ### AMQP
 
 The [AMQP Extension](https://github.com/AxonFramework/extension-amqp) repository provides support for the [Advanced Message Queuing Protocol](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) (AMQP).
 
 Users can add this extension to, for example, include a [RabbitMQ](https://www.rabbitmq.com/) integration with their Axon Framework application.
-Setting up this integration allows you to publish Axon events to an AQMP exchange. Events can also be read from exchanges and handled by event processors, providing means of integrating with other services.
+Setting up this integration allows you to publish Axon events to an AMQP exchange. 
+Events can also be read from exchanges and handled by event processors, providing means of integrating with other services.
 
 In doing so, you would enable (micro)service communication through event streaming.
 Or, you can attach a (third-party) application with your Axon Framework application, communicating through AMQP.
