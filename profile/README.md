@@ -215,6 +215,13 @@ Please read the [Multitenancy](https://github.com/AxonFramework/extension-multit
 
 ### Reactor
 
+The [Reactor Extension](https://github.com/AxonFramework/extension-reactor) repository provides [Axon Framework](#axon-framework) infrastructure components using the [Project Reactor](https://projectreactor.io/) API.
+
+You can add this extension to your Axon Framework project to use results like `Mono` and `Flux` on framework components.
+It provides Reactor versions of Axon's gateways, allowing you to leverage the reactive API on the edge of your Axon Framework application.
+
+Please read the [Reactor section](https://docs.axoniq.io/reference-guide/extensions/reactor) of the documentation for more information about this extension.
+
 ### Spring Cloud
 
 ### Spring Native
