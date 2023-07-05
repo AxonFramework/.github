@@ -294,8 +294,44 @@ Please read the [Tracing section](https://docs.axoniq.io/reference-guide/extensi
 
 ## Bill of Materials
 
+The [Bill of Materials](https://github.com/AxonFramework/axon-bom) repository of Axon Framework is a dedicated dependency providing compatible versions of the [framework](#axon-framework) and [extensions](#extensions).
+Hence, by adding `axon-bom` to your dependency management system, you ensure the compatibility of Axon's dependencies.
+As such, we recommend you use this dependency whenever you combine Axon Framework with any of the extensions.
+
 ## Inspector Axon
+
+The Axon Framework team designed [Inspector Axon](https://inspector.axoniq.io/) to further enable [Axon Framework](#axon-framework) applications with valuable data and tooling.
+
+Inspector Axon provides you with numerous benefits:
+- [Event Processor](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors) management tooling, like start, stop, [split, and merge](https://docs.axoniq.io/reference-guide/axon-framework/events/event-processors/streaming#splitting-and-merging-segments)
+- Automated monitoring of *all* your message handlers
+- Insights into the flow of your messages with valuable diagrams
+- The information required to deep-dive into the performance of your Axon Framework application
+
+By doing all this, we aim to teach the inner workings of Axon Framework to any user, enabling you the get the most out of the framework.
+
+The [how it works](https://inspector.axoniq.io/how-it-works) page helps you understand how Inspector Axon provides all this information.
+We refer you to [this](https://inspector.axoniq.io/legal) page if you (and your team) are curious to understand how we secure all this behavior.
 
 ## IntelliJ IDEA Plugin
 
+The [Axon Framework IntelliJ Plugin](https://plugins.jetbrains.com/plugin/18628-axon-framework) is a plugin you can add when using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+Including this plugin eases your developer experience of [Axon Framework](#axon-framework) 4.x-based applications.
+
+Some of the features this plugin adds to IntelliJ are:
+* Line markers to visualize messages
+* Axon Framework-specific code structure inspections
+* Easy access to the documentation
+
+Please read the [README](https://github.com/AxonFramework/IdeaPlugin#readme) of the IdeaPlugin project to learn more about this plugin.
+
 ## AxonIQ Initializr
+
+The [AxonIQ Initializr](https://github.com/AxonIQ/initializr) is a tool providing a kickstart into your Axon Framework- *and* Spring Boot-based application.
+
+When browsing to [https://start.axoniq.io/](https://start.axoniq.io/) you are prompted with the ability to specify the basis of your application-to-be.
+As may become apparent, the AxonIQ Initializr is a variant of the [Spring Initializr](https://start.spring.io/) with Axon Framework-specifics attached.
+
+Due to this, you can also utilize the Initializr through [IntelliJ IDEA](https://www.jetbrains.com/idea/) when constructing a new project (just as with the Spring Initializr).
+
+Although the Initializr is not strictly a part of the Axon Framework project, we mention it regardless as it focuses on kickstarting your Axon Framework application(s). 
