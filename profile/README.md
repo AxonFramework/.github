@@ -253,6 +253,21 @@ Please keep that in mind when using this extension.
 
 ### Tracing
 
+The [Tracing Extension](https://github.com/AxonFramework/extension-tracing) repository enables integration with [Open Tracing](https://opentracing.io/).
+
+When using this extension, you will replace the `Command-` and `QueryGateway` with implementations that attach span information to your `Messages`.
+Furthermore, when handling a `Message`, a dedicated `MessageHandlerInterceptor` ensures the span is populated on the overall trace.
+
+Although this is valuable, it is essential to mention that the Open Tracing implementation has been archived in favor of [Open Telemetry](https://opentelemetry.io/).
+Furthermore, as of [Axon Framework](#axon-framework) version [4.6.0](https://github.com/AxonFramework/AxonFramework/releases/tag/axon-4.6.0), the framework provides native support for Open Telemetry.
+
+We thus recommend that you use the [integrated tracing support](https://docs.axoniq.io/reference-guide/axon-framework/monitoring/tracing) whenever you are on Axon Framework version 4.6 or above.
+
+Nonetheless, we still maintain and update the Tracing Extension for the time being.
+As such, you can be certain the extension still works as intended.
+
+Please read the [Tracing section](https://docs.axoniq.io/reference-guide/extensions/tracing) of the documentation for more information about this extension.
+
 ## Bill of Materials
 
 ## Inspector Axon
