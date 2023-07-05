@@ -104,7 +104,7 @@ For more details about each extension, we refer to the subsections below.
  * **[Multitenancy](#multitenancy)** - Extension adding building blocks to simplify [multitenancy](https://en.wikipedia.org/wiki/Multitenancy), particularly straightforward in combination with [Axon Server](https://developer.axoniq.io/axon-server/overview)
  * **[Reactor](#reactor)** - Extension providing Axon Framework-specific infrastructure components using the [Project Reactor](https://projectreactor.io/) API 
  * **[Spring Cloud](#spring-cloud)** - Extension adding [Spring Cloud](https://spring.io/projects/spring-cloud) integration for command routing
- * **[Spring Native](#spring-native)** - Experimental extension providing native compilation for Axon and Spring-based application through the [Spring Native](https://github.com/spring-attic/spring-native) project.  
+ * **[Spring Native](#spring-native)** - Experimental extension providing native compilation for Axon and Spring-based application through the [Spring Native](https://github.com/spring-attic/spring-native) project  
  * **[Tracing](#tracing)** - Extension adding [Open Tracing](https://opentracing.io/) integration to Axon's infrastructure components, superseded by integrated [Open Telemetry](https://opentelemetry.io/) support
 
 ### AMQP
