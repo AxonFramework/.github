@@ -292,3 +292,12 @@ Some of the features this plugin adds to IntelliJ are:
 Please read the [README](https://github.com/AxonFramework/IdeaPlugin#readme) of the IdeaPlugin project to learn more about this plugin.
 
 ## AxonIQ Initializr
+
+The [AxonIQ Initializr](https://github.com/AxonIQ/initializr) is a tool providing a kickstart into your Axon Framework- *and* Spring Boot-based application.
+
+When browsing to [https://start.axoniq.io/](https://start.axoniq.io/) you are prompted with the ability to specify the basis of your application-to-be.
+As may become apparent, the AxonIQ Initializr is a variant of the [Spring Initializr](https://start.spring.io/) with Axon Framework-specifics attached.
+
+Due to this, you can also utilize the Initializr through [IntelliJ IDEA](https://www.jetbrains.com/idea/) when constructing a new project (just as with the Spring Initializr).
+
+Although the Initializr is not strictly a part of the Axon Framework project, we mention it regardless as it focuses on kickstarting your Axon Framework application(s). 
