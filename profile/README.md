@@ -15,6 +15,7 @@ Although the main repository, [Axon Framework](https://github.com/AxonFramework/
 * **[Inspector Axon](#inspector-axon)** - Specialized monitoring and management tooling for Axon Framework applications.
 * **[IntelliJ IDEA Plugin](#intellij-idea-plugin)** - Plugin for IntelliJ IDEA simplifying Axon Framework development  
 * **[AxonIQ Initializr](#axoniq-initializr)** - Webpage providing Axon Framework project scaffolding
+* **[Data Protection Module](#data-protection-module)** - Separate tool from AxonIQ simplifying implementation of Data Protection Laws like [GDPR](https://gdpr-info.eu/)
 
 For more information on anything Axon, please visit our websites, [https://developer.axoniq.io/](https://developer.axoniq.io/) and [https://axoniq.io](https://axoniq.io).
 The former provides dedicated developer information, like explaining concepts, the available tooling, and blogs.
@@ -276,3 +277,19 @@ Please read the [Tracing section](https://docs.axoniq.io/reference-guide/extensi
 ## IntelliJ IDEA Plugin
 
 ## AxonIQ Initializr
+
+## Data Protection Module
+
+As you may know, [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview) dictates that you never remove or update events.
+With the introduction of Data Protection Laws like [GDPR](https://gdpr-info.eu/), developers using Event Sourcing in their applications are thus faced with a predicament.
+A predicament you are required to resolve by law.
+
+As one of [Axon Framework's](#axon-framework) pillars is to enable Event Sourcing, we are inclined to provide a solution.
+As such, AxonIQ constructed the [Data Protection Module](https://developer.axoniq.io/axon-data-protection/overview) in response to these new requirements.
+
+The Data Protection Module is a Java library providing the tooling to mark specific data inside events as ["personally identifiable information"](https://en.wikipedia.org/wiki/Personal_data) (PII for short).
+Then when you store the event or send it over a network, you can encrypt the PII to protect it.
+From there, you can choose a preferred key management system, with options like relation databases, hardware security modules, and [HashiCorp Vault](https://www.hashicorp.com/products/vault).
+
+In combination with Axon Framework, you can implement the described behavior seamlessly by using dedicated annotations and a custom [`Serializer`](https://docs.axoniq.io/reference-guide/axon-framework/serialization) as provided by the Data Protection Module.
+If you require more information about the Data Protection Module, be sure to [reach out](https://www.axoniq.io/contact).  
