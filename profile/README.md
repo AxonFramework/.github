@@ -10,7 +10,7 @@ Although the main repository, [Axon Framework](https://github.com/AxonFramework/
 * **[Axon Framework](#axon-framework)** 
 * **[Getting Started](#getting-started)** 
 * **[Receiving Help](#receiving-help)**
-* **[Axon Server](#axon-server)** - Purpose built Message router for commands, event, and queries, and an efficient event store 
+* **[Axon Server](#axon-server)** - Purpose-built Event Store and Messaging Platform for commands and queries 
 * **[Extensions](#extensions)**
 * **[Bill of Materials](#bill-of-materials)** 
 * **[Inspector Axon](#inspector-axon)** - Specialized monitoring and management tooling for Axon Framework applications.
