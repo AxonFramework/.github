@@ -324,7 +324,7 @@ As one of [Axon Framework's](#axon-framework) pillars is to enable Event Sourcin
 As such, AxonIQ constructed the [Data Protection Module](https://developer.axoniq.io/axon-data-protection/overview) in response to these new requirements.
 
 The Data Protection Module is a Java library providing the tooling to mark specific data inside events as ["personally identifiable information"](https://en.wikipedia.org/wiki/Personal_data) (PII for short).
-Then when you store the event or send it over a network, you can encrypt the PII to protect it.
+Then when you store the event or send it over a network, you can encrypt the PII within the event to protect it.
 From there, you can choose a preferred key management system, with options like relation databases, hardware security modules, and [HashiCorp Vault](https://www.hashicorp.com/products/vault).
 
 In combination with Axon Framework, you can implement the described behavior seamlessly by using dedicated annotations and a custom [`Serializer`](https://docs.axoniq.io/reference-guide/axon-framework/serialization) as provided by the Data Protection Module.
