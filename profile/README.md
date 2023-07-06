@@ -94,10 +94,10 @@ The message-driven nature of the framework becomes particularly useful when scal
 Furthermore, by Event Sourcing, you are future-proof to any shift and change of the models.
 
 Both benefits come with their own set of requirements.
-Firstly, we are inclined to use a distributed version of the `CommandBus`, `EventBus`, and `QueryBus` to break apart an application, considering their distinct routing requirements.
-Secondly, as Event Sourcing requires us to store events forever, the event store will grow indefinitely.
+Firstly, we are inclined to use a distributed version of the `CommandBus`, `EventStore`, and `QueryBus` to break apart an application, considering their distinct routing requirements.
+Secondly, as Event Sourcing requires us to store events forever, the event store will grow _indefinitely_.
 
-[Axon Server](https://developer.axoniq.io/axon-server/overview) greatly simplifies these requirements by implementing these four infrastructure components.
+[Axon Server](https://developer.axoniq.io/axon-server/overview) greatly simplifies these requirements by implementing these four requirements.
 It is a dedicated message routing solution knowledgeable about the need to consistently route commands, stream events as fast as possible, and support the differing querying needs of each service.
 But most of all, Axon Server is an event store, a database specifically designed for storing events for event sourcing purpose.
 It offers superior scalability and throughput characteristics without requiring complex tuning of, for example, an RDBMS.
