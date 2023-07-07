@@ -10,6 +10,7 @@ Although the main repository, [Axon Framework](https://github.com/AxonFramework/
 * **[Axon Framework](#axon-framework)** 
 * **[Getting Started](#getting-started)** 
 * **[Receiving Help](#receiving-help)**
+* **[Axon Server](#axon-server)** - Purpose-built Event Store and Messaging Platform for commands and queries 
 * **[Extensions](#extensions)**
 * **[Bill of Materials](#bill-of-materials)** 
 * **[Inspector Axon](#inspector-axon)** - Specialized monitoring and management tooling for Axon Framework applications.
@@ -31,7 +32,7 @@ The building blocks include aggregate design handles, aggregate repositories, co
 The framework provides sensible defaults for all of these components out of the box.
 
 Axon Framework assists in distributing applications to support scalability or fault tolerance.
-The most accessible and quick road forward would be to use [Axon Server](https://developer.axoniq.io/axon-server/overview) to seamlessly adjust message buses to distributed implementations.
+The most accessible and quick road forward would be to use [Axon Server](#axon-server) to seamlessly adjust message buses to distributed implementations.
 It does so by being a dedicated message router and an efficient event store implementation for scalable event sourcing.
 
 Next to Axon Server, several of [Axon's extensions](#extensions) can help in this space too.
@@ -86,6 +87,28 @@ There are a couple of things to consider when you're traversing anything Axon:
   Attaching it to your project is straightforward, providing you with a dashboard with specialized metrics and message flow diagrams, to name a few.
 * If you are developing in [IntelliJ IDEA](https://www.jetbrains.com/idea/), know that we have constructed a [plugin](#intellij-idea-plugin) to streamline the development of Axon-based applications.
 
+## Axon Server
+
+Through [Axon Framework](#axon-framework), users can quickly build flexible applications by leveraging the building blocks for [DDD](https://developer.axoniq.io/domain-driven-design/overview), [CQRS](https://developer.axoniq.io/cqrs/overview), and [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview).
+
+The message-driven nature of the framework becomes particularly useful when scaling the application or breaking it apart into distinct [microservice](https://developer.axoniq.io/microservices/overview).
+Furthermore, by Event Sourcing, you are future-proof to any shift and change of the models.
+
+Both benefits come with their own set of requirements.
+Firstly, we are inclined to use a distributed version of the `CommandBus`, `EventStore`, and `QueryBus` to break apart an application, considering their distinct routing requirements.
+Secondly, as Event Sourcing requires us to store events forever, the event store will grow _indefinitely_.
+
+[Axon Server](https://developer.axoniq.io/axon-server/overview) greatly simplifies these requirements by implementing these four requirements.
+It is a dedicated message routing solution knowledgeable about the need to consistently route commands, stream events as fast as possible, and support the differing querying needs of each service.
+But most of all, Axon Server is an event store, a database specifically designed for storing events for event sourcing purpose.
+It offers superior scalability and throughput characteristics without requiring complex tuning of, for example, an RDBMS.
+
+By using Axon Server in combination with Axon Framework, you will thus resolve the need to set up a distributed version of each bus and drop the requirement to optimize your event store by hand.
+
+Be sure to visit the dedicated [Axon Server page](https://developer.axoniq.io/axon-server/overview) to learn more about all its capabilities and usages.
+If desired, you can download it [here](https://lp.axoniq.io/axon-server-download) for free to give it a try.
+And if you are curious about the additional features provided next to those described above, you can get a trial license by filling in [this](https://www.axoniq.io/axon-server-trial) form.
+
 ## Extensions
 
 Where [Axon Framework](#axon-framework) contains the core functionality for event-driven application construction, the extensions add valuable integrations with other tools and languages to enhance Axon's capabilities.
@@ -102,7 +125,7 @@ For more details about each extension, we refer to the subsections below.
  * **[Kafka](#kafka)** - Extension adding [Kafka](https://kafka.apache.org/) integration for event streaming
  * **[Kotlin](#kotlin)** - Extension enhancing the development experience when using [Kotlin](https://kotlinlang.org/)
  * **[MongoDB](#mongodb)** - Extension adding [MongoDB](https://www.mongodb.com/) integration for all Axon Framework components requiring storage
- * **[Multitenancy](#multitenancy)** - Extension adding building blocks to simplify [multitenancy](https://en.wikipedia.org/wiki/Multitenancy), particularly straightforward in combination with [Axon Server](https://developer.axoniq.io/axon-server/overview)
+ * **[Multitenancy](#multitenancy)** - Extension adding building blocks to simplify [multitenancy](https://en.wikipedia.org/wiki/Multitenancy), particularly straightforward in combination with [Axon Server](#axon-server)
  * **[Reactor](#reactor)** - Extension providing Axon Framework-specific infrastructure components using the [Project Reactor](https://projectreactor.io/) API 
  * **[Spring Cloud](#spring-cloud)** - Extension adding [Spring Cloud](https://spring.io/projects/spring-cloud) integration for command routing
  * **[Spring Native](#spring-native)** - Experimental extension providing native compilation for Axon and Spring-based application through the [Spring Native](https://github.com/spring-attic/spring-native) project  
@@ -119,7 +142,7 @@ Events can also be read from exchanges and handled by event processors, providin
 In doing so, you would enable (micro)service communication through event streaming.
 Or, you can attach a (third-party) application with your Axon Framework application, communicating through AMQP.
 
-You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers event streaming.
+You should regard this extension as a partial replacement of [Axon Server](#axon-server) as, compared to Axon Server, it only covers event streaming.
 
 Please read the [AMQP section](https://docs.axoniq.io/reference-guide/extensions/spring-amqp) of the documentation for more information about this extension.
 
@@ -133,7 +156,7 @@ As command routing differs from, for example, load balancing REST operation, it 
 The extension achieves this by implementing the `CommandRouter` and `CommandBusConnector`, consolidated in the `JGroupsConnector`.
 This connector provides the service discovery and message routing required to pass `CommandMessages` from one application (instance) to another.
 
-You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers command routing.
+You should regard this extension as a partial replacement of [Axon Server](#axon-server) as, compared to Axon Server, it only covers command routing.
 
 Please read the [JGroups section](https://docs.axoniq.io/reference-guide/extensions/jgroups) of the documentation for more information about this extension.
 
@@ -163,7 +186,7 @@ Or, you can attach a (third-party) application with your Axon Framework applicat
 
 Note that the Axon Framework team **does not** intend to support [Event Sourcing](https://developer.axoniq.io/event-sourcing/overview) through the Kafka Extension.
 Although there are Kafka-focused articles explaining how to achieve this, we find this a suboptimal solution leading to predicaments in the future.
-We thus suggest you choose [Axon Server](https://axoniq.io/product-overview/axon-server), an RDBMS solution or the [MongoDB Extension](#mongodb) to store your events and subsequently support event sourcing.
+We thus suggest you choose [Axon Server](#axon-server), an RDBMS solution or the [MongoDB Extension](#mongodb) to store your events and subsequently support event sourcing.
 
 You should regard this extension as a partial replacement of Axon Server as, compared to Axon Server, it only covers event streaming.
 
@@ -193,11 +216,11 @@ By doing so, you ascertain that the framework uses a single transaction to updat
 
 The same logic applies to Sagas that are backed by streaming processors and stored in MongoDB; storing the tokens next to the saga instances makes the application more robust.
 
-Note that although you can use this extension to adjust MongoDB into an Event Store, we do not necessarily recommend this.
-During the lifecycle of this extension, we have noticed predicaments with how MongoDB behaves, causing the Event Store to act suboptimal from a performance perspective.
-We thus recommend either Axon Server (the highest level of performance for event storage) or an RDBMS of choice instead.
+Note that although you can use this extension to adjust MongoDB into an event store, we do not necessarily recommend this.
+During the lifecycle of this extension, we have noticed predicaments with how MongoDB behaves, causing the event store to act suboptimal from a performance perspective.
+We thus recommend either [Axon Server](#axon-server) (the highest level of performance for event storage) or an RDBMS of choice instead.
 
-You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers event storage.
+You should regard this extension as a partial replacement of Axon Server as, compared to Axon Server, it only covers event storage.
 
 Please read the [MongoDB section](https://docs.axoniq.io/reference-guide/extensions/mongo) of the documentation for more information about this extension.
 
@@ -209,7 +232,7 @@ By adding this extension to your [Axon Framework](#axon-framework) application(s
 In doing so, you can run a single instance of an application but serve many of your tenants in one go.
 Interfaces like the `CommandBus`, `EventProcessor`, and `SequencedDeadLetterQueue` are implemented by this extension to delegate tenant-specific tasks to concrete implementations of these components.
 
-If you combine Axon Framework and the Multitenancy Extension with [Axon Server](https://axoniq.io/product-overview/axon-server), the multitenancy experience of your app(s) is seamless.
+If you combine Axon Framework and the Multitenancy Extension with [Axon Server](#axon-server), the multitenancy experience of your app(s) is seamless.
 The extension achieves this by utilizing Axon Server's [multi-context](https://docs.axoniq.io/reference-guide/axon-server/administration/multi-context) behavior to dynamically create new tenants (read: a context per tenant) whenever you register them.
 It is usable without Axon Server, but you will be inclined to implement factories for the infrastructure components yourself.
 
@@ -237,7 +260,7 @@ This connector provides the service discovery and message routing required to pa
 Since the implementation uses the Spring Cloud discovery interfaces to perform the service discovery, you are able to choose a multitude of implementations to enable distributed command routing.
 You can, for example, use implementation like [Netflix](https://spring.io/projects/spring-cloud-netflix), [Consul](https://spring.io/projects/spring-cloud-consul), [Zookeeper](https://spring.io/projects/spring-cloud-zookeeper), [Kubernetes](https://spring.io/projects/spring-cloud-kubernetes), and many more.
 
-You should regard this extension as a partial replacement of [Axon Server](https://axoniq.io/product-overview/axon-server) as, compared to Axon Server, it only covers command routing.
+You should regard this extension as a partial replacement of [Axon Server](#axon-server) as, compared to Axon Server, it only covers command routing.
 
 Please read the [Spring Cloud section](https://docs.axoniq.io/reference-guide/extensions/spring-cloud) of the documentation for more information about this extension.
 
