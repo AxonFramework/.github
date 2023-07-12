@@ -41,6 +41,8 @@ However, they will require a little more handy work from the developer to set up
 In conclusion, all this combined helps to create a well-structured application without worrying about the infrastructure.
 Hence, your focus can shift from non-functional requirements to your business functionality.
 
+If you want to learn more about Axon Framework, you can visit the product page [here](https://www.axoniq.io/products/axon-framework) and the developer-focused page [here](https://developer.axoniq.io/axon-framework/overview).
+
 ## Getting started
 
 Numerous resources can help you on your journey in using Axon Framework.
@@ -108,6 +110,8 @@ By using Axon Server in combination with Axon Framework, you will thus resolve t
 Be sure to visit the dedicated [Axon Server page](https://developer.axoniq.io/axon-server/overview) to learn more about all its capabilities and usages.
 If desired, you can download it [here](https://lp.axoniq.io/axon-server-download) for free to give it a try.
 And if you are curious about the additional features provided next to those described above, you can get a trial license by filling in [this](https://www.axoniq.io/axon-server-trial) form.
+
+If you want to learn more about Axon Server, you can visit the product page [here](https://www.axoniq.io/products/axon-server) and the developer-focused page [here](https://developer.axoniq.io/axon-server/overview).
 
 ## Extensions
 
