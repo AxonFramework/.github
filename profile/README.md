@@ -268,17 +268,11 @@ You should regard this extension as a partial replacement of [Axon Server](#axon
 
 Please read the [Spring Cloud section](https://docs.axoniq.io/reference-guide/extensions/spring-cloud) of the documentation for more information about this extension.
 
-### Spring Native
+### Spring AOT
 
-The [Spring Native Extension](https://github.com/AxonFramework/extension-spring-native) repository enables integration with the [Spring Native](https://github.com/spring-attic/spring-native) project.
+The [Spring AOT Extension](https://github.com/AxonFramework/extension-spring-aot) repository enables native compilation of Spring Boot based Axon projects.
 
 This extension allows you to compile to a native image whenever you combine Axon Framework with Spring.
-
-Note that the current Spring Native Extension is an experimental release.
-The extension is experimental since the project we based it on is an experimental release too.
-
-As an experimental release, you may expect rigorous changes in the API whenever a new release is published.
-Please keep that in mind when using this extension.
 
 ### Tracing
 
