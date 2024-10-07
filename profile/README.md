@@ -17,7 +17,7 @@ Although the main repository, [Axon Framework](https://github.com/AxonFramework/
 * **[IntelliJ IDEA Plugin](#intellij-idea-plugin)** - Plugin for IntelliJ IDEA simplifying Axon Framework development
 * **[Data Protection Module](#data-protection-module)** - Separate tool from AxonIQ simplifying implementation of Data Protection Laws like [GDPR](https://gdpr-info.eu/)
 
-For more information on anything Axon, please visit our websites, [https://axoniq.io](https://axoniq.io).
+For more information on anything Axon, please visit our website, [https://axoniq.io](https://axoniq.io), or our documentation, [https://docs.axoniq.io](https://docs.axoniq.io).
 It contains information about AxonIQ, the company maintaining the 'Axon Framework'-project, providing information like the products, use cases, subscriptions, and training.
 
 ## Axon Framework
