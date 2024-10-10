@@ -55,16 +55,16 @@ For example, training:
   Check out the [Training courses](https://www.axoniq.io/training) page for more information about these.
 
 Or, the references and forum:
-* The [documentation](https://docs.axoniq.io/axon-framework-reference/4.10/) explains all components maintained within Axon Framework's products.
+* The [documentation](https://docs.axoniq.io/) explains all components maintained within Axon Framework's products.
 * If the guide doesn't help, our [forum](https://discuss.axoniq.io/) provides a place to ask your questions during development.
 * Posting questions on [StackOverflow](https://stackoverflow.com/) next to Axon's forum is also possible. When doing so, add the `axon` tag! This tag will nudge AxonIQ developers, which will cover those on a best-effort basis.
 
 And several sample projects you can check out:
 * The [Bike Rental Demo](https://docs.axoniq.io/bikerental-demo/main/) guide will help you to start a basic Axon Framework application from scratch.
-* The [Giftcard Demo](https://github.com/AxonIQ/giftcard) contains a simple gift card management
+* The [Giftcard Demo](https://github.com/AxonIQ/giftcard-demo) contains a simple gift card management
 * The [Hotel Demo](https://github.com/AxonIQ/hotel-demo) shows a fleshed-out example of using Axon Framework.
 * The [Code Samples](https://github.com/AxonIQ/code-samples) repository contains in-depth samples for special use cases.
-  It, for example, contains subjects like [distributed exception handling](https://github.com/AxonIQ/code-samples/tree/master/distributed-exceptions), [sagas](https://github.com/AxonIQ/code-samples/tree/master/saga), [upcasters](https://github.com/AxonIQ/code-samples/tree/master/upcaster), [multitenancy](https://github.com/AxonIQ/code-samples/tree/master/multitenant-application), [set-based validation](https://github.com/AxonIQ/code-samples/tree/master/set-based-validation-actor-model), and many more.
+  It, for example, contains subjects like [distributed exception handling](https://github.com/AxonIQ/code-samples/tree/master/distributed-exceptions), [sagas](https://github.com/AxonIQ/code-samples/tree/master/saga), [upcasters](https://github.com/AxonIQ/code-samples/tree/master/upcaster), [multitenancy](https://github.com/AxonIQ/code-samples/tree/main/multitenancy), [set-based validation](https://github.com/AxonIQ/code-samples/tree/master/set-based-validation-actor-model), and many more.
 
 ## Receiving help
 
@@ -103,7 +103,7 @@ It offers superior scalability and throughput characteristics without requiring 
 By using Axon Server in combination with Axon Framework, you will thus resolve the need to set up a distributed version of each bus and drop the requirement to optimize your event store by hand.
 
 Be sure to visit the dedicated [Axon Server page](https://www.axoniq.io/products/axon-server) to learn more about all its capabilities and usages.
-If desired, you can download it [here](https://lp.axoniq.io/axon-server-download) for free to give it a try.
+If desired, you can download it [here](https://www.axoniq.io/download) for free to give it a try.
 And if you are curious about the additional features provided next to those described above, you can get a trial license by filling in [this](https://www.axoniq.io/axon-server-trial) form.
 
 ## Extensions
@@ -141,7 +141,7 @@ Or, you can attach a (third-party) application with your Axon Framework applicat
 
 You should regard this extension as a partial replacement of [Axon Server](#axon-server) as, compared to Axon Server, it only covers event streaming.
 
-Please read the [AMQP section](https://docs.axoniq.io/amqp-extension-reference/) of the documentation for more information about this extension.
+Please read the [AMQP section](https://docs.axoniq.io/amqp-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### JGroups
 
@@ -155,7 +155,7 @@ This connector provides the service discovery and message routing required to pa
 
 You should regard this extension as a partial replacement of [Axon Server](#axon-server) as, compared to Axon Server, it only covers command routing.
 
-Please read the [JGroups section](https://docs.axoniq.io/jgroups-extension-reference/) of the documentation for more information about this extension.
+Please read the [JGroups section](https://docs.axoniq.io/jgroups-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### JobRunr Pro
 
@@ -164,11 +164,11 @@ The [JobRunr Pro Extension](https://github.com/AxonFramework/extension-jobrunrpr
 Users can benefit from this extension whenever they have:
 
 1. Acquired [JobRunr Pro](https://www.jobrunr.io/en/pricing/), and
-2. want to use Axon's [deadline management](https://docs.axoniq.io/axon-framework-reference/4.10/deadlines/deadline-managers/) functionality.
+2. want to use Axon's [deadline management](https://docs.axoniq.io/axon-framework-reference/latest/deadlines/deadline-managers/) functionality.
 
 We constructed this extension as some feature on the `DeadlineManager` API cannot be supported with the free edition of JobRunr.
 
-Please read the [Jobrunr Pro section](https://docs.axoniq.io/jobrunr-pro-extension-reference/main/) of the documentation for more information about this extension.
+Please read the [Jobrunr Pro section](https://docs.axoniq.io/jobrunr-pro-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Kafka
 
@@ -187,28 +187,28 @@ We thus suggest you choose [Axon Server](#axon-server), an RDBMS solution or the
 
 You should regard this extension as a partial replacement of Axon Server as, compared to Axon Server, it only covers event streaming.
 
-Please read the [Kafka section](https://docs.axoniq.io/kafka-extension-reference/) of the documentation for more information about this extension.
+Please read the [Kafka section](https://docs.axoniq.io/kafka-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Kotlin
 
 The [Kotlin Extension](https://github.com/AxonFramework/extension-kotlin) repository eases Axon Framework development for [Kotlin](https://kotlinlang.org/)-based applications.
 
 You can use this extension to relieve some of the "awkwardness" of the Axon Framework API when using Kotlin to build your application(s).
-It does so by providing reified methods of several of Axon's infrastructure components, like the [command](https://docs.axoniq.io/kotlin-extension-reference/commands/#commandgateway) and [query gateway]( https://docs.axoniq.io/kotlin-extension-reference/queries/#querygateway), [upcasters](https://docs.axoniq.io/kotlin-extension-reference/events/#_event_upcasters), and the [test fixtures](https://docs.axoniq.io/axon-framework-reference/4.10/testing/).
+It does so by providing reified methods of several of Axon's infrastructure components, like the [command](https://docs.axoniq.io/kotlin-extension-reference/latest/commands/#commandgateway) and [query gateway](https://docs.axoniq.io/kotlin-extension-reference/latest/queries/#querygateway), [upcasters](https://docs.axoniq.io/kotlin-extension-reference/latest/events/#_event_upcasters), and the [test fixtures](https://docs.axoniq.io/axon-framework-reference/latest/testing/).
 
-Please read the [Kotlin section](https://docs.axoniq.io/kotlin-extension-reference/) of the documentation for more information about this extension.
+Please read the [Kotlin section](https://docs.axoniq.io/kotlin-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### MongoDB
 
 The [MongoDB Extension](https://github.com/AxonFramework/extension-mongo) repository enables [MongoDB](https://www.mongodb.com/) as a storage solution throughout the framework.
 
 Users can set this extension whenever they want to use MongoDB to store:
-- [Events](https://docs.axoniq.io/axon-framework-reference/4.10/events/event-bus-and-event-store/)
-- [Sagas](https://docs.axoniq.io/axon-framework-reference/4.10/sagas/)
-- [Tracking Tokens](https://docs.axoniq.io/axon-framework-reference/4.10/events/event-processors/streaming/#tracking-tokens)
-- [Dead Letters](https://docs.axoniq.io/axon-framework-reference/4.10/events/event-processors/#dead-letter-queue)
+- [Events](https://docs.axoniq.io/axon-framework-reference/latest/events/event-bus-and-event-store/)
+- [Sagas](https://docs.axoniq.io/axon-framework-reference/latest/sagas/)
+- [Tracking Tokens](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/streaming/#tracking-tokens)
+- [Dead Letters](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/#dead-letter-queue)
 
-Especially when you store Query Models or inside a MongoDB collection, we recommend you keep the tracking tokens of the [streaming processor](https://docs.axoniq.io/axon-framework-reference/4.10/events/event-processors/streaming/) inside MongoDB as well.
+Especially when you store Query Models or inside a MongoDB collection, we recommend you keep the tracking tokens of the [streaming processor](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/streaming/) inside MongoDB as well.
 By doing so, you ascertain that the framework uses a single transaction to update the model and token.
 
 The same logic applies to Sagas that are backed by streaming processors and stored in MongoDB; storing the tokens next to the saga instances makes the application more robust.
@@ -219,7 +219,7 @@ We thus recommend either [Axon Server](#axon-server) (the highest level of perfo
 
 You should regard this extension as a partial replacement of Axon Server as, compared to Axon Server, it only covers event storage.
 
-Please read the [MongoDB section](https://docs.axoniq.io/mongodb-extension-reference/) of the documentation for more information about this extension.
+Please read the [MongoDB section](https://docs.axoniq.io/mongodb-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Multitenancy
 
@@ -230,10 +230,10 @@ In doing so, you can run a single instance of an application but serve many of y
 Interfaces like the `CommandBus`, `EventProcessor`, and `SequencedDeadLetterQueue` are implemented by this extension to delegate tenant-specific tasks to concrete implementations of these components.
 
 If you combine Axon Framework and the Multitenancy Extension with [Axon Server](#axon-server), the multitenancy experience of your app(s) is seamless.
-The extension achieves this by utilizing Axon Server's [multi-context](https://docs.axoniq.io/axon-server-reference/v2024.1/axon-server/administration/multi-context/) behavior to dynamically create new tenants (read: a context per tenant) whenever you register them.
+The extension achieves this by utilizing Axon Server's [multi-context](https://docs.axoniq.io/axon-server-reference/latest/axon-server/administration/multi-context/) behavior to dynamically create new tenants (read: a context per tenant) whenever you register them.
 It is usable without Axon Server, but you will be inclined to implement factories for the infrastructure components yourself.
 
-Please read the [Multitenancy section](https://docs.axoniq.io/multitenancy-extension-reference/main/) of the documentation for more information about this extension.
+Please read the [Multitenancy section](https://docs.axoniq.io/multitenancy-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Reactor
 
@@ -242,7 +242,7 @@ The [Reactor Extension](https://github.com/AxonFramework/extension-reactor) repo
 You can add this extension to your Axon Framework project to use results like `Mono` and `Flux` on framework components.
 It provides Reactor versions of Axon's gateways, allowing you to leverage the reactive API on the edge of your Axon Framework application.
 
-Please read the [Reactor section](https://docs.axoniq.io/reactor-extension-reference/) of the documentation for more information about this extension.
+Please read the [Reactor section](https://docs.axoniq.io/reactor-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Spring AoT
 
@@ -250,7 +250,7 @@ The [Spring AoT Extension](https://github.com/AxonFramework/extension-spring-nat
 
 This extension allows you to compile to a native image whenever you combine Axon Framework with Spring Boot.
 
-Please read the [Spring AoT section](https://docs.axoniq.io/spring-aot-extension-reference/main/) of the documentation for more information about this extension.
+Please read the [Spring AoT section](https://docs.axoniq.io/spring-aot-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Spring Cloud
 
@@ -267,7 +267,7 @@ You can, for example, use implementation like [Netflix](https://spring.io/projec
 
 You should regard this extension as a partial replacement of [Axon Server](#axon-server) as, compared to Axon Server, it only covers command routing.
 
-Please read the [Spring Cloud section](https://docs.axoniq.io/spring-cloud-extension-reference/) of the documentation for more information about this extension.
+Please read the [Spring Cloud section](https://docs.axoniq.io/spring-cloud-extension-reference/latest/) of the documentation for more information about this extension.
 
 ### Tracing
 
@@ -277,28 +277,28 @@ When using this extension, you will replace the `Command-` and `QueryGateway` wi
 Furthermore, when handling a `Message`, a dedicated `MessageHandlerInterceptor` ensures the span is populated on the overall trace.
 
 Although this is valuable, it is essential to mention that the Open Tracing implementation has been archived in favor of [Open Telemetry](https://opentelemetry.io/).
-Furthermore, as of [Axon Framework](#axon-framework) version [4.6.0](https://docs.axoniq.io/axon-framework-reference/development/release-notes/major-releases/#_release_4_6), the framework provides native support for [Open Telemetry](https://opentelemetry.io/).
+Furthermore, as of [Axon Framework](#axon-framework) version [4.6.0](https://docs.axoniq.io/axon-framework-reference/latest/release-notes/major-releases/#_release_4_6), the framework provides native support for [Open Telemetry](https://opentelemetry.io/).
 
-We thus recommend that you use the [integrated tracing support](https://docs.axoniq.io/axon-framework-reference/4.10/monitoring/tracing/) whenever you are on Axon Framework version 4.6 or above.
+We thus recommend that you use the [integrated tracing support](https://docs.axoniq.io/axon-framework-reference/latest/monitoring/tracing/) whenever you are on Axon Framework version 4.6 or above.
 
 Nonetheless, we still maintain and update the Tracing Extension for the time being.
 As such, you can be certain the extension still works as intended.
 
-Please read the [Tracing section](https://docs.axoniq.io/tracing-extension-reference/) of the documentation for more information about this extension.
+Please read the [Tracing section](https://docs.axoniq.io/tracing-extension-reference/latest/) of the documentation for more information about this extension.
 
 ## AxonIQ Console
 
 The Axon Framework team designed [AxonIQ Console](https://console.axoniq.io/) to further enable [Axon Framework](#axon-framework) applications with valuable data and tooling.
 
 AxonIQ Console provides you with numerous benefits:
-- [Event Processor](https://docs.axoniq.io/axon-framework-reference/4.10/events/event-processors/) management tooling, like start, stop, [split, and merge](https://docs.axoniq.io/axon-framework-reference/4.10/events/event-processors/streaming/#splitting-and-merging-segments)
+- [Event Processor](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/) management tooling, like start, stop, [split, and merge](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/streaming/#splitting-and-merging-segments)
 - Automated monitoring of *all* your message handlers
 - Insights into the flow of your messages with valuable diagrams
 - The information required to deep-dive into the performance of your Axon Framework application
 
 By doing all this, we aim to teach the inner workings of Axon Framework to any user, enabling you the get the most out of the framework.
 
-If you want to know more about AxonIQ Console, you can check the product page [here](https://www.axoniq.io/products/axoniq-console) and the reference documentation [here](https://docs.axoniq.io/axoniq-console-reference/main/).
+If you want to know more about AxonIQ Console, you can check the product page [here](https://www.axoniq.io/products/axoniq-console) and the reference documentation [here](https://docs.axoniq.io/axoniq-console-reference/).
 We refer you to "Legal Documents" in the bottom right corner of https://console.axoniq.io/ if you (and your team) are curious to understand how we secure all this behavior.
 
 ## Bill of Materials
@@ -332,5 +332,5 @@ The Data Protection Module is a Java library providing the tooling to mark speci
 Then when you store the event or send it over a network, you can encrypt the PII within the event to protect it.
 From there, you can choose a preferred key management system, with options like relation databases, hardware security modules, and [HashiCorp Vault](https://www.hashicorp.com/products/vault).
 
-In combination with Axon Framework, you can implement the described behavior seamlessly by using dedicated annotations and a custom [`Serializer`](https://docs.axoniq.io/axon-framework-reference/4.10/serialization/) as provided by the Data Protection Module.
+In combination with Axon Framework, you can implement the described behavior seamlessly by using dedicated annotations and a custom [`Serializer`](https://docs.axoniq.io/axon-framework-reference/latest/serialization/) as provided by the Data Protection Module.
 If you require more information about the Data Protection Module, be sure to [reach out](https://www.axoniq.io/contact).  
