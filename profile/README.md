@@ -1,110 +1,101 @@
-# Axon
+<p align="center">
+  <a href="https://axoniq.io/">
+    <img src="https://www.axoniq.io/hubfs/axoniq-light.svg" alt="Axon Framework logo" width="600" height="200">
+  </a>
+</p>
 
-[Axon Framework](#axon-framework) is a framework for building evolutionary, [message-driven microservice](https://www.axoniq.io/concepts/event-driven-microservices) systems based on the principles of [Domain-Driven Design](https://www.axoniq.io/concepts/domain-driven-design) (DDD), [Command-Query Responsibility Separation](https://www.axoniq.io/concepts/cqrs-and-event-sourcing) (CQRS), and [Event Sourcing](https://www.axoniq.io/concepts/cqrs-and-event-sourcing).
+<h1 align="center"></h1>
 
-The whole 'Axon Framework'-project consists of numerous repositories you can use in combination with one another to build a flexible and sustainable application landscape.
-Although the main repository, [Axon Framework](https://github.com/AxonFramework/AxonFramework), is undoubtedly the core, you can optimize and enhance it by utilizing the other available tools.
+<p align="center">
+  Build modern event-driven systems with AxonIQ technology
+  <br>
+  <a href="https://www.axoniq.io/"><strong>Learn more at our website »</strong></a>
+  <br>
+  <br>
+  <a href="https://www.axoniq.io/products/axon-framework">Axon Framework</a>
+  ·
+  <a href="https://www.axoniq.io/products/axon-server">Axon Server</a>
+  ·
+  <a href="https://www.axoniq.io/products/axoniq-console">AxonIQ Console</a>
 
-#### Contents
+</p>
 
-* **[Axon Framework](#axon-framework)** 
-* **[Getting Started](#getting-started)** 
-* **[Receiving Help](#receiving-help)**
-* **[Axon Server](#axon-server)** - Purpose-built Event Store and Messaging Platform for commands and queries 
-* **[Extensions](#extensions)**
-* **[AxonIQ Console](#axoniq-console)** - Specialized monitoring and management tooling for Axon Framework applications.
-* **[Bill of Materials](#bill-of-materials)** 
-* **[IntelliJ IDEA Plugin](#intellij-idea-plugin)** - Plugin for IntelliJ IDEA simplifying Axon Framework development
-* **[Data Protection Module](#data-protection-module)** - Separate tool from AxonIQ simplifying implementation of Data Protection Laws like [GDPR](https://gdpr-info.eu/)
+#
 
-For more information on anything Axon, please visit our website, [https://axoniq.io](https://axoniq.io), or our documentation, [https://docs.axoniq.io](https://docs.axoniq.io).
-It contains information about AxonIQ, the company maintaining the 'Axon Framework'-project, providing information like the products, use cases, subscriptions, and training.
+<p><br/></p>
+<img src="https://www.axoniq.io/hubfs/axon-framework-line-light.png" alt="Axon Framework logo" width="500">
 
-## Axon Framework
+The Axon Framework is an open source framework that's 100% Java and enables developers to build scalable and maintainable applications using a message-driven approach. It simplifies the complexities of developing distributed systems by providing a structured way to handle commands, events, and queries within your application. [If you're not familiar with the Event Sourcing pattern](https://www.axoniq.io/concepts/cqrs-and-event-sourcing), you can learn more about it on our website.
 
-[Axon Framework](https://github.com/AxonFramework/AxonFramework) provides you with the necessary building blocks to follow these principles.
-The messaging support for commands, events, and queries is at the core of these building blocks.
-The messaging basics enable an evolutionary approach towards microservices through the [location transparency](https://en.wikipedia.org/wiki/Location_transparency) they provide.
+At its core, the Axon Framework encourages an architecture where components communicate through messages, which promotes loose coupling and increases flexibility. This messaging system allows different parts of your application to interact without needing to know the internal workings of each other, making your system more modular and easier to manage. If you already use tools and technologies that enable your applications to utilize a pub/sub pattern, then you already understand the basics of message driven and event driven architectures.
 
-The building blocks include aggregate design handles, aggregate repositories, command buses, saga design handles, event stores, query buses, and more.
-The framework provides sensible defaults for all of these components out of the box.
+The Axon Framework further enhances your applications and services by enabling you to support Event Sourcing, a powerful architectural pattern where state changes are recorded as a sequence of events. Why is this important? Well, instead of just storing the current state in a traditional database, every change is logged, providing a complete history of how the data arrived at its current form. This can be incredibly useful for auditing, debugging, and even recreating past states of your application when necessary.
 
-Axon Framework assists in distributing applications to support scalability or fault tolerance.
-The most accessible and quick road forward would be to use [Axon Server](#axon-server) to seamlessly adjust message buses to distributed implementations.
-It does so by being a dedicated message router and an efficient event store implementation for scalable event sourcing.
+For JVM-based developers working with microservices, the Axon Framework offers tools to manage the complexities inherent in distributed systems. By leveraging its messaging and event-handling capabilities, you can build applications that are not only scalable and robust but also easier to extend and maintain over time.
 
-Next to Axon Server, several of [Axon's extensions](#extensions) can help in this space too.
-However, they will require a little more handy work from the developer to set up, as knowledge of the tools supported by the extensions is required.
+## How Can I Get Started with the Axon Framework?
 
-In conclusion, all this combined helps to create a well-structured application without worrying about the infrastructure.
-Hence, your focus can shift from non-functional requirements to your business functionality.
+We highly recommend all developers to get started by going to the [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
 
-If you want to learn more about Axon Framework, you can visit the product page [here](https://www.axoniq.io/products/axon-framework).
+Furthermore, below are several other helpful resources:
+* 👨‍💻 [Go to the Axon Framework Github repo](https://github.com/AxonFramework/AxonFramework) to view the source code and follow the project 
+* 📖 [Read the tutorial](https://docs.axoniq.io/bikerental-demo/main/) on building a Bike Rental application from scratch
+* 📺 [Watch our in-depth video training courses](https://academy.axoniq.io/) in the AxonIQ Academy
+* 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss.
+* ⬇️ [See additional code samples](https://github.com/AxonIQ/code-samples) in our code samples repository 
 
-## Getting started
+
+<p><br/></p>
+<p><br/></p>
+<img src="https://www.axoniq.io/hubfs/axon-server-line-light.png" alt="Axon Server logo" width="500">
+
+For developers who are serious about Event Sourcing, we offer the Axon Server. The Axon Server is designed to simplify the development of event-driven applications by acting as both an Event Store and a message router. Therefore, it is as a central hub for managing and distributing events, commands, and queries within your application ecosystem. By handling these critical aspects, Axon Server allows developers to focus more on business logic rather than the complexities of communication and data storage in distributed systems.
+
+When developing microservices, coordinating interactions between multiple services can become quite challenging. This is especially the case as the system scales to handle more users or additional features requested by customers and stakeholders. Axon Server addresses this by providing seamless and scalable message routing between services. It ensures that messages reach their intended targets and that events are efficiently broadcasted to all interested parties. 
+
+In addition to functioning as a message router, Axon Server enables apps and microservices to be Event Sourced. This means that all changes in the application state are stored as a sequence of events. This allows the application to reconstruct its state at any point in time by replaying these events. For developers unfamiliar with event sourcing, this means you have a complete history of what happened in your system, which is invaluable for debugging, auditing, and understanding complex behaviors. This is a revolutionary approach to traditional application development, however the architectural pattern is proven to create better and more resilient software systems.
+
+By incorporating Axon Server into your applications, especially those built with microservices, you gain a robust platform for managing the flow of data and commands across your system. It abstracts the complexities of message handling and event storage, enabling you to build scalable, maintainable, and high-performing applications. This allows you to deliver features faster and adapt more readily to changing business requirements.
+
+## How Can I Get Started with Axon Server?
+
+If you're getting started with the Axon Server, then we recommend that you go to the [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
+
+Furthermore, below are several other helpful resources:
+* ⬇️ [Download the latest release](https://www.axoniq.io/download) of Axon Server. It's free and easy to install and customize
+* 📖 [Read the lateast release notes](https://docs.axoniq.io/axon-server-reference/v2024.1/release-notes/) to see the latest features 
+* 📖 [Read the tutorial](https://docs.axoniq.io/bikerental-demo/main/) on building a Bike Rental application from scratch
+* 📺 [Watch our in-depth video training courses](https://academy.axoniq.io/) in the AxonIQ Academy
+* 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss
+
+
+
+
+<p><br/></p>
+<p><br/></p>
+<img src="https://www.axoniq.io/hubfs/axoniq-console-line-light.png" alt="Axon Server logo" width="500">
+
+The AxonIQ Console is a management tool designed to maximize the effectiveness of applications developed with Axon Framework and supported through Axon Server. It facilitates near-zero configuration and provides a single platform for insight, management, control, and reporting of your application infrastructure.
+
+
+<p align="center">
+  <a href="https://axoniq.io/">
+    <img src="https://docs.axoniq.io/axoniq-console-getting-started/main/ac-monitor-axon-framework-applications/_images/ac-message-dependency-diagram.png" alt="Axon Framework logo" width="600">
+  </a>
+</p>
+
+## How to Get Started with AxonIQ Console
 
 Numerous resources can help you on your journey in using Axon Framework.
-A good starting point is the [AxonIQ Docs](https://docs.axoniq.io/home/), which contains resources like basics, guides, and reference documentation.
+A good starting point is [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
 
-There are, however, a lot more resources you can benefit from.
 
-For example, training:
-* We have our very own [Academy](https://academy.axoniq.io/)!
-  The introductory courses are free, followed by more in-depth (paid) courses.
-* Next to the Academy, there are dedicated training sessions provided by AxonIQ.
-  Check out the [Training courses](https://www.axoniq.io/training) page for more information about these.
+Furthermore, below are several other helpful resources:
+* 👨‍💻 [Go to the AxonIQ Console](https://console.axoniq.io/) to try it out for yourself with a FREE account
+* 📖 [Read the Getting Started Guide](https://docs.axoniq.io/bikerental-demo/main/) to learn how to connect the AxonIQ Console to your application
+* 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss
 
-Or, the references and forum:
-* The [documentation](https://docs.axoniq.io/) explains all components maintained within Axon Framework's products.
-* If the guide doesn't help, our [forum](https://discuss.axoniq.io/) provides a place to ask your questions during development.
-* Posting questions on [StackOverflow](https://stackoverflow.com/) next to Axon's forum is also possible. When doing so, add the `axon` tag! This tag will nudge AxonIQ developers, which will cover those on a best-effort basis.
-
-And several sample projects you can check out:
-* The [Bike Rental Demo](https://docs.axoniq.io/bikerental-demo/main/) guide will help you to start a basic Axon Framework application from scratch.
-* The [Giftcard Demo](https://github.com/AxonIQ/giftcard-demo) contains a simple gift card management
-* The [Hotel Demo](https://github.com/AxonIQ/hotel-demo) shows a fleshed-out example of using Axon Framework.
-* The [Code Samples](https://github.com/AxonIQ/code-samples) repository contains in-depth samples for special use cases.
-  It, for example, contains subjects like [distributed exception handling](https://github.com/AxonIQ/code-samples/tree/master/distributed-exceptions), [sagas](https://github.com/AxonIQ/code-samples/tree/master/saga), [upcasters](https://github.com/AxonIQ/code-samples/tree/master/upcaster), [multitenancy](https://github.com/AxonIQ/code-samples/tree/main/multitenancy), [set-based validation](https://github.com/AxonIQ/code-samples/tree/master/set-based-validation-actor-model), and many more.
-
-## Receiving help
-
-Do you need help with using any of our libraries or products?
-Know that we want to help you out the best we can!
-There are a couple of things to consider when you're traversing anything Axon:
-
-* Checking the [documentation page](https://docs.axoniq.io) should be your first stop when anything is unclear.
-* When the documentation does not cover your predicament, we would greatly appreciate it if you could file an [issue](https://github.com/AxonFramework/AxonFramework/issues/new/choose) for it.
-  Drafting issues helps us to improve the documentation for all users based on your valuable input.
-* Our [forum](https://discuss.axoniq.io/) provides a space to communicate with the Axon community to help you out.
-  AxonIQ developers will help you out on a best-effort basis.
-  And if you know how to help someone else, we greatly appreciate your contributions!
-* We also monitor Stack Overflow for any question tagged with [**axon**](https://stackoverflow.com/questions/tagged/axon).
-  Similarly to the forum, AxonIQ developers help out on a best-effort basis.
-* We built [AxonIQ Console](#axoniq-console) purposefully to help you inspect your Axon Framework application and Axon Server instances in detail.
-  Attaching it to your project is straightforward, providing you with a dashboard with specialized metrics and message flow diagrams, to name a few.
-* If you are developing in [IntelliJ IDEA](https://www.jetbrains.com/idea/), know that we have constructed a [plugin](#intellij-idea-plugin) to streamline the development of Axon-based applications.
-
-## Axon Server
-
-Through [Axon Framework](#axon-framework), users can quickly build flexible applications by leveraging the building blocks for [DDD](https://www.axoniq.io/concepts/domain-driven-design), [CQRS](https://www.axoniq.io/concepts/cqrs-and-event-sourcing), and [Event Sourcing](https://www.axoniq.io/concepts/cqrs-and-event-sourcing).
-
-The message-driven nature of the framework becomes particularly useful when scaling the application or breaking it apart into distinct [microservice](https://www.axoniq.io/concepts/event-driven-microservices).
-Furthermore, by Event Sourcing, you are future-proof to any shift and change of the models.
-
-Both benefits come with their own set of requirements.
-Firstly, we are inclined to use a distributed version of the `CommandBus`, `EventStore`, and `QueryBus` to break apart an application, considering their distinct routing requirements.
-Secondly, as Event Sourcing requires us to store events forever, the event store will grow _indefinitely_.
-
-[Axon Server](https://www.axoniq.io/products/axon-server) greatly simplifies these requirements by implementing these four requirements.
-It is a dedicated message routing solution knowledgeable about the need to consistently route commands, stream events as fast as possible, and support the differing querying needs of each service.
-But most of all, Axon Server is an event store, a database specifically designed for storing events for event sourcing purpose.
-It offers superior scalability and throughput characteristics without requiring complex tuning of, for example, an RDBMS.
-
-By using Axon Server in combination with Axon Framework, you will thus resolve the need to set up a distributed version of each bus and drop the requirement to optimize your event store by hand.
-
-Be sure to visit the dedicated [Axon Server page](https://www.axoniq.io/products/axon-server) to learn more about all its capabilities and usages.
-If desired, you can download it [here](https://www.axoniq.io/download) for free to give it a try.
-And if you are curious about the additional features provided next to those described above, you can get a trial license by filling in [this](https://www.axoniq.io/axon-server-trial) form.
+<h1 align="center"></h1>
 
 ## Extensions
 
@@ -286,22 +277,13 @@ As such, you can be certain the extension still works as intended.
 
 Please read the [Tracing section](https://docs.axoniq.io/tracing-extension-reference/latest/) of the documentation for more information about this extension.
 
-## AxonIQ Console
 
-The Axon Framework team designed [AxonIQ Console](https://console.axoniq.io/) to further enable [Axon Framework](#axon-framework) applications with valuable data and tooling.
+<br>
+<p></p>
+</br>
 
-AxonIQ Console provides you with numerous benefits:
-- [Event Processor](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/) management tooling, like start, stop, [split, and merge](https://docs.axoniq.io/axon-framework-reference/latest/events/event-processors/streaming/#splitting-and-merging-segments)
-- Automated monitoring of *all* your message handlers
-- Insights into the flow of your messages with valuable diagrams
-- The information required to deep-dive into the performance of your Axon Framework application
 
-By doing all this, we aim to teach the inner workings of Axon Framework to any user, enabling you the get the most out of the framework.
-
-If you want to know more about AxonIQ Console, you can check the product page [here](https://www.axoniq.io/products/axoniq-console) and the reference documentation [here](https://docs.axoniq.io/axoniq-console-reference/).
-We refer you to "Legal Documents" in the bottom right corner of https://console.axoniq.io/ if you (and your team) are curious to understand how we secure all this behavior.
-
-## Bill of Materials
+# Bill of Materials
 
 The [Bill of Materials](https://github.com/AxonFramework/axon-bom) repository of Axon Framework is a dedicated dependency providing compatible versions of the [framework](#axon-framework) and [extensions](#extensions).
 Hence, by adding `axon-bom` to your dependency management system, you ensure the compatibility of Axon's dependencies.
