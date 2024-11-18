@@ -45,6 +45,32 @@ Furthermore, below are several other helpful resources:
 * ⬇️ [See additional code samples](https://github.com/AxonIQ/code-samples) in our code samples repository 
 
 
+
+<p><br/></p>
+<p><br/></p>
+<img src="https://www.axoniq.io/hubfs/axoniq-console-line-light.png" alt="Axon Server logo" width="500">
+
+The AxonIQ Console is a management tool designed to maximize the effectiveness of applications developed with Axon Framework and supported through Axon Server. It facilitates near-zero configuration and provides a single platform for insight, management, control, and reporting of your application infrastructure.
+
+
+<p align="center">
+  <a href="https://axoniq.io/">
+    <img src="https://docs.axoniq.io/axoniq-console-getting-started/main/ac-monitor-axon-framework-applications/_images/ac-message-dependency-diagram.png" alt="Axon Framework logo" width="600">
+  </a>
+</p>
+
+## How to Get Started with AxonIQ Console
+
+Numerous resources can help you on your journey in using Axon Framework.
+A good starting point is [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
+
+
+Furthermore, below are several other helpful resources:
+* 👨‍💻 [Go to the AxonIQ Console](https://console.axoniq.io/) to try it out for yourself with a FREE account
+* 📖 [Read the Getting Started Guide](https://docs.axoniq.io/bikerental-demo/main/) to learn how to connect the AxonIQ Console to your application
+* 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss
+
+
 <p><br/></p>
 <p><br/></p>
 <img src="https://www.axoniq.io/hubfs/axon-server-line-light.png" alt="Axon Server logo" width="500">
@@ -70,30 +96,6 @@ Furthermore, below are several other helpful resources:
 
 
 
-
-<p><br/></p>
-<p><br/></p>
-<img src="https://www.axoniq.io/hubfs/axoniq-console-line-light.png" alt="Axon Server logo" width="500">
-
-The AxonIQ Console is a management tool designed to maximize the effectiveness of applications developed with Axon Framework and supported through Axon Server. It facilitates near-zero configuration and provides a single platform for insight, management, control, and reporting of your application infrastructure.
-
-
-<p align="center">
-  <a href="https://axoniq.io/">
-    <img src="https://docs.axoniq.io/axoniq-console-getting-started/main/ac-monitor-axon-framework-applications/_images/ac-message-dependency-diagram.png" alt="Axon Framework logo" width="600">
-  </a>
-</p>
-
-## How to Get Started with AxonIQ Console
-
-Numerous resources can help you on your journey in using Axon Framework.
-A good starting point is [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
-
-
-Furthermore, below are several other helpful resources:
-* 👨‍💻 [Go to the AxonIQ Console](https://console.axoniq.io/) to try it out for yourself with a FREE account
-* 📖 [Read the Getting Started Guide](https://docs.axoniq.io/bikerental-demo/main/) to learn how to connect the AxonIQ Console to your application
-* 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss
 
 <h1 align="center"></h1>
 
