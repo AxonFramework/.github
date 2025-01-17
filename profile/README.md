@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://axoniq.io/">
-    <img src="https://www.axoniq.io/hubfs/axoniq-light.svg" alt="Axon Framework logo" width="600" height="200">
+    <img src="https://www.axoniq.io/hubfs/AxonIQ-variable.svg" alt="Axon Framework logo" width="600" height="200">
   </a>
 </p>
 
