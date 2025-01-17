@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://axoniq.io/">
-    <img src="https://www.axoniq.io/hubfs/axoniq-light.svg" alt="Axon Framework logo" width="600" height="200">
+    <img src="https://www.axoniq.io/hubfs/AxonIQ-variable.svg" alt="Axon Framework logo" width="600" height="200">
   </a>
 </p>
 
@@ -23,7 +23,7 @@
 #
 
 <p><br/></p>
-<img src="https://www.axoniq.io/hubfs/axon-framework-line-light.png" alt="Axon Framework logo" width="500">
+<img src="https://www.axoniq.io/hubfs/Axon-Framework-line-variable.svg" alt="Axon Framework logo" width="500">
 
 The Axon Framework is an open source framework that's 100% Java and enables developers to build scalable and maintainable applications using a message-driven approach. It simplifies the complexities of developing distributed systems by providing a structured way to handle commands, events, and queries within your application. [If you're not familiar with the Event Sourcing pattern](https://www.axoniq.io/concepts/cqrs-and-event-sourcing), you can learn more about it on our website.
 
@@ -48,7 +48,7 @@ Furthermore, below are several other helpful resources:
 
 <p><br/></p>
 <p><br/></p>
-<img src="https://www.axoniq.io/hubfs/axoniq-console-line-light.png" alt="Axon Server logo" width="500">
+<img src="https://www.axoniq.io/hubfs/AxonIQ-Console-line-variable.svg" alt="Axon Server logo" width="500">
 
 The AxonIQ Console is a management tool designed to maximize the effectiveness of applications developed with Axon Framework and supported through Axon Server. It facilitates near-zero configuration and provides a single platform for insight, management, control, and reporting of your application infrastructure.
 
@@ -73,7 +73,7 @@ Furthermore, below are several other helpful resources:
 
 <p><br/></p>
 <p><br/></p>
-<img src="https://www.axoniq.io/hubfs/axon-server-line-light.png" alt="Axon Server logo" width="500">
+<img src="https://www.axoniq.io/hubfs/Axon-Server-line-variable.svg" alt="Axon Server logo" width="500">
 
 For developers who are serious about Event Sourcing, we offer the Axon Server. The Axon Server is designed to simplify the development of event-driven applications by acting as both an Event Store and a message router. Therefore, it is as a central hub for managing and distributing events, commands, and queries within your application ecosystem. By handling these critical aspects, Axon Server allows developers to focus more on business logic rather than the complexities of communication and data storage in distributed systems.
 
