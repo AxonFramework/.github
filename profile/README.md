@@ -1,13 +1,11 @@
 <p align="center">
-  <a href="https://axoniq.io/">
-    <img src="https://www.axoniq.io/hubfs/AxonIQ-variable.svg" alt="Axon Framework logo" width="600" height="200">
-  </a>
+    <img src="../images/AxonIQLogo-2025.png" alt="Axoniq logo" width="600" height="200">
 </p>
 
 <h1 align="center"></h1>
 
 <p align="center">
-  Build modern event-driven systems with AxonIQ technology
+  Build modern event-driven systems with Axoniq technology
   <br>
   <a href="https://www.axoniq.io/"><strong>Learn more at our website »</strong></a>
   <br>
@@ -23,7 +21,7 @@
 #
 
 <p><br/></p>
-<img src="https://www.axoniq.io/hubfs/Axon-Framework-line-variable.svg" alt="Axon Framework logo" width="500">
+<img src="../images/AxonFrameworkLogo-2025.png" alt="Axon Framework logo" width="500">
 
 The Axon Framework is an open source framework that's 100% Java and enables developers to build scalable and maintainable applications using a message-driven approach. It simplifies the complexities of developing distributed systems by providing a structured way to handle commands, events, and queries within your application. [If you're not familiar with the Event Sourcing pattern](https://www.axoniq.io/concepts/cqrs-and-event-sourcing), you can learn more about it on our website.
 
@@ -35,45 +33,19 @@ For JVM-based developers working with microservices, the Axon Framework offers t
 
 ## How Can I Get Started with the Axon Framework?
 
-We highly recommend all developers to get started by going to the [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
+We highly recommend all developers to get started by going to the [Axoniq Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
 
 Furthermore, below are several other helpful resources:
 * 👨‍💻 [Go to the Axon Framework Github repo](https://github.com/AxonFramework/AxonFramework) to view the source code and follow the project 
 * 📖 [Read the tutorial](https://docs.axoniq.io/bikerental-demo/main/) on building a Bike Rental application from scratch
-* 📺 [Watch our in-depth video training courses](https://academy.axoniq.io/) in the AxonIQ Academy
+* 📺 [Watch our in-depth video training courses](https://academy.axoniq.io/) in the Axoniq Academy
 * 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss.
-* ⬇️ [See additional code samples](https://github.com/AxonIQ/code-samples) in our code samples repository 
-
-
-
-<p><br/></p>
-<p><br/></p>
-<img src="https://www.axoniq.io/hubfs/AxonIQ-Console-line-variable.svg" alt="Axon Server logo" width="500">
-
-The AxonIQ Console is a management tool designed to maximize the effectiveness of applications developed with Axon Framework and supported through Axon Server. It facilitates near-zero configuration and provides a single platform for insight, management, control, and reporting of your application infrastructure.
-
-
-<p align="center">
-  <a href="https://axoniq.io/">
-    <img src="https://docs.axoniq.io/axoniq-console-getting-started/main/ac-monitor-axon-framework-applications/_images/ac-message-dependency-diagram.png" alt="Axon Framework logo" width="600">
-  </a>
-</p>
-
-## How to Get Started with AxonIQ Console
-
-Numerous resources can help you on your journey in using Axon Framework.
-A good starting point is [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
-
-
-Furthermore, below are several other helpful resources:
-* 👨‍💻 [Go to the AxonIQ Console](https://console.axoniq.io/) to try it out for yourself with a FREE account
-* 📖 [Read the Getting Started Guide](https://docs.axoniq.io/bikerental-demo/main/) to learn how to connect the AxonIQ Console to your application
-* 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss
+* ⬇️ [See additional code samples](https://github.com/AxonIQ/code-samples) in our code samples repository
 
 
 <p><br/></p>
 <p><br/></p>
-<img src="https://www.axoniq.io/hubfs/Axon-Server-line-variable.svg" alt="Axon Server logo" width="500">
+<img src="../images/AxonServerLogo-2025.png" alt="Axon Server logo" width="500">
 
 For developers who are serious about Event Sourcing, we offer the Axon Server. The Axon Server is designed to simplify the development of event-driven applications by acting as both an Event Store and a message router. Therefore, it is as a central hub for managing and distributing events, commands, and queries within your application ecosystem. By handling these critical aspects, Axon Server allows developers to focus more on business logic rather than the complexities of communication and data storage in distributed systems.
 
@@ -85,13 +57,13 @@ By incorporating Axon Server into your applications, especially those built with
 
 ## How Can I Get Started with Axon Server?
 
-If you're getting started with the Axon Server, then we recommend that you go to the [AxonIQ Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
+If you're getting started with the Axon Server, then we recommend that you go to the [Axoniq Documentation Portal](https://docs.axoniq.io/home/), which provides links to our tutorials, guides, and reference documentation.
 
 Furthermore, below are several other helpful resources:
 * ⬇️ [Download the latest release](https://www.axoniq.io/download) of Axon Server. It's free and easy to install and customize
 * 📖 [Read the lateast release notes](https://docs.axoniq.io/axon-server-reference/v2024.1/release-notes/) to see the latest features 
 * 📖 [Read the tutorial](https://docs.axoniq.io/bikerental-demo/main/) on building a Bike Rental application from scratch
-* 📺 [Watch our in-depth video training courses](https://academy.axoniq.io/) in the AxonIQ Academy
+* 📺 [Watch our in-depth video training courses](https://academy.axoniq.io/) in the Axoniq Academy
 * 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss
 
 
