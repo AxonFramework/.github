@@ -290,3 +290,6 @@ From there, you can choose a preferred key management system, with options like 
 
 In combination with Axon Framework, you can implement the described behavior seamlessly by using dedicated annotations and a custom [`Serializer`](https://docs.axoniq.io/axon-framework-reference/latest/serialization/) as provided by the Data Protection Module.
 If you require more information about the Data Protection Module, be sure to [reach out](https://www.axoniq.io/contact).  
+
+
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=31ffe27e-667c-48ff-8a14-8029d44dfb66" />
