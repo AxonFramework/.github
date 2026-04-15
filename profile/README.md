@@ -23,7 +23,7 @@
 <p><br/></p>
 <img src="../images/AxonFrameworkLogo-2025.png" alt="Axon Framework logo" width="500">
 
-> [!NOTE]
+> [!IMPORTANT]
 > This repository has moved from the [Axon Framework GitHub organization](https://github.com/AxonFramework/) to the [AxonIQ GitHub organization](https://github.com/AxonIQ) to streamline project management.
 > All existing links, clones, forks, stars, and bookmarks will continue to work seamlessly thanks to GitHub's automatic redirects.
 > For more details, read [here](#repository-transferred)
