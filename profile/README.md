@@ -23,6 +23,11 @@
 <p><br/></p>
 <img src="../images/AxonFrameworkLogo-2025.png" alt="Axon Framework logo" width="500">
 
+> [!NOTE]
+> This repository has moved from the [Axon Framework GitHub organization](https://github.com/AxonFramework/) to the [AxonIQ GitHub organization](https://github.com/AxonIQ) to streamline project management.
+> All existing links, clones, forks, stars, and bookmarks will continue to work seamlessly thanks to GitHub's automatic redirects.
+> For more details, read [here](#repository-transferred)
+
 The Axon Framework is an open source framework that's 100% Java and enables developers to build scalable and maintainable applications using a message-driven approach. It simplifies the complexities of developing distributed systems by providing a structured way to handle commands, events, and queries within your application. [If you're not familiar with the Event Sourcing pattern](https://www.axoniq.io/concepts/cqrs-and-event-sourcing), you can learn more about it on our website.
 
 At its core, the Axon Framework encourages an architecture where components communicate through messages, which promotes loose coupling and increases flexibility. This messaging system allows different parts of your application to interact without needing to know the internal workings of each other, making your system more modular and easier to manage. If you already use tools and technologies that enable your applications to utilize a pub/sub pattern, then you already understand the basics of message driven and event driven architectures.
@@ -42,6 +47,25 @@ Furthermore, below are several other helpful resources:
 * 🙋 [Ask questions](https://discuss.axoniq.io/) in our help forum, Discuss.
 * ⬇️ [See additional code samples](https://github.com/AxonIQ/code-samples) in our code samples repository
 
+## Repository Transferred
+
+The Axon Framework team has decided to move the Axon Framework repository from the [Axon Framework GitHub organization](https://github.com/AxonFramework/) to the [Axoniq GitHub organization](https://github.com/AxonIQ).
+This switch makes project management easier for the team, due to our active use of GitHub Project boards.
+
+GitHub Project boards do not allow merging repositories between different organizations in a single board.
+The team is actively constructing several open-core licensed modules for Axon Framework.
+These are best placed under the AxonIQ GitHub organization due to their licensing.
+
+Users of the Axon Framework repository will not experience any disruptions from this transfer.
+GitHub automatically redirects all links, clones, and references from the old location to the new one.
+Your existing forks, stars, and bookmarks will continue to work seamlessly, regardless of the transfer.
+
+However, it is recommended to update existing local clones to the new repository URL.
+You can do this by using `git remote` on the command line:
+
+```shell
+git remote set-url origin https://github.com/AxonIQ/AxonFramework.git
+```
 
 <p><br/></p>
 <p><br/></p>
